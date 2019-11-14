@@ -83,7 +83,7 @@ void Matematik(double Fakultet[]){
     printf("Hvor glad er du for Matematik? (1-10)\n");
     scanf("%d", &Input);
 
-    Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.2;
+    Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.1;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.8;
     Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.8;
     Fakultet[Samfund] = Fakultet[Samfund] + Input*0.5;
@@ -100,7 +100,7 @@ void Dansk(double Fakultet[]){
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.9;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.3;
     Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.3;
-    Fakultet[Samfund] = Fakultet[Samfund] + Input*0.6;
+    Fakultet[Samfund] = Fakultet[Samfund] + Input*0.7;
     Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.3;
 
     return;
@@ -113,9 +113,9 @@ void Fysik(double Fakultet[]){
 
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.1;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.9;
-    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.7;
+    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.8;
     Fakultet[Samfund] = Fakultet[Samfund] + Input*0.3;
-    Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.5;
+    Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.3;
 
     return;
 }
@@ -129,7 +129,7 @@ void Kemi(double Fakultet[]){
     Fakultet[Natur] = Fakultet[Natur] + Input*0.9;
     Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.6;
     Fakultet[Samfund] = Fakultet[Samfund] + Input*0.1;
-    Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.7;
+    Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.6;
 
     return;
 }
@@ -139,9 +139,9 @@ void Engelsk(double Fakultet[]){
     printf("Hvor glad er du for Engelsk? (1-10)\n");
     scanf("%d", &Input);
 
-    Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.9;
+    Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.8;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.6;
-    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.6;
+    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.7;
     Fakultet[Samfund] = Fakultet[Samfund] + Input*0.7;
     Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.6;
 
@@ -155,9 +155,9 @@ void Historie(double Fakultet[]){
 
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.8;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.2;
-    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.2;
+    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.3;
     Fakultet[Samfund] = Fakultet[Samfund] + Input*0.8;
-    Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.5;
+    Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.4;
 
     return;
 }
@@ -169,8 +169,8 @@ void AndetSprog(double Fakultet[]){
 
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.7;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.1;
-    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.1;
-    Fakultet[Samfund] = Fakultet[Samfund] + Input*0.3;
+    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.2;
+    Fakultet[Samfund] = Fakultet[Samfund] + Input*0.4;
     Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.4;
 
     return;
@@ -183,7 +183,7 @@ void Samfundsfag(double Fakultet[]){
 
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.6;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.2;
-    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.2;
+    Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.5;
     Fakultet[Samfund] = Fakultet[Samfund] + Input*0.9;
     Fakultet[Sundhed] = Fakultet[Sundhed] + Input*0.7;
 
