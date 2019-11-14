@@ -24,8 +24,29 @@ int main(void){
     Questions(Fakultet);
 
     for (i=0;i<FAKULTETSIZE;i++){
+        switch (i)
+        {
+        case 0:
+            printf("Humaniora         ");
+            break;
+        case 1:
+            printf("Naturvidenskab    ");
+            break;
+        case 2:
+            printf("Teknik            ");
+            break;
+        case 3:
+            printf("Samfundsvidenskab ");
+            break;
+        case 4:
+            printf("Sundhedsvidenskab");
+            break;
+        default:
+            printf("Noget gik galt i printet.");
+            break;
+        }
 
-        printf("%.4lf \n",Fakultet[i]);
+        printf(" %.2lf \n",Fakultet[i]);
     }
 
 	return 0; 
@@ -237,6 +258,3 @@ void Biologi(double Fakultet[]){
 
     return;
 }
-
-
-
