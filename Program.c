@@ -84,8 +84,7 @@ void Matematik(double Fakultet[]){
     printf("Hvor glad er du for Matematik? (1-10)\n");
     scanf("%d", &Input);
     } while (Input<1 || Input>10);
-
-
+    
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.1;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.8;
     Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.8;
@@ -229,7 +228,7 @@ void Biologi(double Fakultet[]){
     printf("Hvor glad er du for Biologi? (1-10)\n");
     scanf("%d", &Input);
     } while (Input<1 || Input>10);
-    
+
     Fakultet[Humaniora] = Fakultet[Humaniora] + Input*0.2;
     Fakultet[Natur] = Fakultet[Natur] + Input*0.9;
     Fakultet[Teknisk] = Fakultet[Teknisk] + Input*0.7;
