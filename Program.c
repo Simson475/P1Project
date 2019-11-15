@@ -24,26 +24,20 @@ int main(void){
     Questions(Fakultet);
 
     for (i=0;i<FAKULTETSIZE;i++){
-        switch (i)
-        {
-        case 0:
-            printf("Humaniora         ");
-            break;
-        case 1:
-            printf("Naturvidenskab    ");
-            break;
-        case 2:
-            printf("Teknik            ");
-            break;
-        case 3:
-            printf("Samfundsvidenskab ");
-            break;
-        case 4:
-            printf("Sundhedsvidenskab");
-            break;
-        default:
-            printf("Noget gik galt i printet.");
-            break;
+
+        switch (i) {
+            case 0:
+                printf("Humaniora         "); break;
+            case 1:
+                printf("Naturvidenskab    "); break;
+            case 2:
+                printf("Teknik            "); break;
+            case 3:
+                printf("Samfundsvidenskab "); break;
+            case 4:
+                printf("Sundhedsvidenskab "); break;
+            default:
+                printf("Noget gik galt i printet."); break;
         }
 
         printf(" %.2lf \n",Fakultet[i]);
@@ -56,43 +50,40 @@ int main(void){
 void Questions(double Fakultet[]){
     int i=0;
 
-    printf("");
     for (i=0; i<NUMBEROFQUESTIONS;i++){
 
-        switch (i)
-        {
-        case 0: 
-            Matematik(Fakultet); break;
+        switch (i) {
+            case 0: 
+                Matematik(Fakultet); break;
 
-        case 1: 
-            Dansk(Fakultet); break;
+            case 1: 
+                Dansk(Fakultet); break;
 
-        case 2: 
-            Fysik(Fakultet); break;
+            case 2: 
+                Fysik(Fakultet); break;
 
-        case 3: 
-            Kemi(Fakultet); break;
+            case 3: 
+                Kemi(Fakultet); break;
 
-        case 4: 
-            Engelsk(Fakultet); break;
+            case 4: 
+                Engelsk(Fakultet); break;
 
-        case 5: 
-            Historie(Fakultet); break;
-        
-        case 6:
-            AndetSprog(Fakultet); break;
-        
-        case 7:
-            Samfundsfag(Fakultet); break;
-        
-        case 8:
-            Religion(Fakultet); break;
-        
-        case 9:
-            Biologi(Fakultet); break;
-        default:
-            printf("Der skete en fejl!");
-            break;
+            case 5: 
+                Historie(Fakultet); break;
+            
+            case 6:
+                AndetSprog(Fakultet); break;
+            
+            case 7:
+                Samfundsfag(Fakultet); break;
+            
+            case 8:
+                Religion(Fakultet); break;
+            
+            case 9:
+                Biologi(Fakultet); break;
+            default:
+                printf("Der skete en fejl!"); break;
         }
     }
 
