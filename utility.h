@@ -8,7 +8,7 @@ typedef struct weight{
 }weight;
 
 typedef struct fakulteter_struct{
-    char navn[15];
+    char navn[30];
     double score;
 }fakulteter_struct;
 

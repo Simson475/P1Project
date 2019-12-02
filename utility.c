@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "utility.h"
+
 void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount){
     int i = 0;
 
@@ -63,7 +64,6 @@ int load_questions(weight weights[], int choice){
             break;
     }
     
-
     while (fgets(str, MAXCHAR, file_pointer) != NULL){
         if (i > 0){
             sscanf( str, "%[^;];%lf;%lf;%lf;%lf;%lf;",
@@ -78,4 +78,15 @@ int load_questions(weight weights[], int choice){
     }
 
     return i-1;
+}
+
+void name_faculty(fakulteter_struct fakultet[]){
+
+    strcpy(fakultet[Sundhed].navn,"Sundhed");
+    strcpy(fakultet[Humaniora].navn,"Humaniora");
+    strcpy(fakultet[Samfund].navn,"Samfundsfag");
+    strcpy(fakultet[Teknisk].navn,"Teknisk");
+    strcpy(fakultet[Natur].navn,"Naturvidenskab");
+
+    return;
 }
