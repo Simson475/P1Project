@@ -11,15 +11,15 @@
 
 int main(void){
     int i, question_amount;
-    fakulteter_struct *fakultet= calloc(FAKULTETSIZE,sizeof(fakulteter_struct));
+    fakulteter_struct *fakultet = calloc(FAKULTETSIZE,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
-    question_amount=load_questions(weights, fakultetsvalg);
+    question_amount = load_questions(weights, fakultetsvalg);
     get_questions(fakultet, weights,question_amount);
 
-    for (i=0;i<FAKULTETSIZE;i++){
+    for (i = 0; i < FAKULTETSIZE; i++){
 
-        switch (i) {
+        switch (i){
             case 0:
                 printf("Humaniora         "); break;
             case 1:

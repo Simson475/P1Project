@@ -3,17 +3,17 @@
 #include <string.h>
 #include "utility.h"
 void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount){
-    int i=0;
+    int i = 0;
 
-    for ( i = 0; i < question_amount; i++){
+    for (i = 0; i < question_amount; i++){
         question(fakultet, weights[i]);
     }
     
     return;
 }
 
-void question(fakulteter_struct fakultet[],weight weights){
-    int Input=0;
+void question(fakulteter_struct fakultet[], weight weights){
+    int Input = 0;
 
     get_input(&Input, weights.custom_output);
 
@@ -28,45 +28,44 @@ void question(fakulteter_struct fakultet[],weight weights){
 
 void get_input(int *Input, char custom_output[]){
     do{
-    printf("Hvor glad er du for %s? (1-10)\n",custom_output);
-    scanf("%d", Input);
-    } while (*Input<1 || *Input>10);
+        printf("Hvor glad er du for %s? (1-10)\n", custom_output);
+        scanf("%d", Input);
+    } while (*Input < 1 || *Input > 10);
     
     return;
 }
 
-int load_questions(weight weights[],int choice){
-    int i=0;
+int load_questions(weight weights[], int choice){
+    int i = 0;
     FILE *file_pointer;
     char str[MAXCHAR];
 
-    switch (choice)
-    {
-    case fakultetsvalg:
-        file_pointer=fopen("Operator_File.csv","r");
-        break;
-    case Humaniora:
-        /* code */
-        break;
-    case Natur:
-        /* code */
-        break;
-    case Teknisk:
-        /* code */
-        break;
-    case Samfund:
-        /* code */
-        break;
-    case Sundhed:
-        /* code */
-        break;
-    default:
-        break;
+    switch (choice){
+        case fakultetsvalg:
+            file_pointer=fopen("Operator_File.csv","r");
+            break;
+        case Humaniora:
+            /* code */
+            break;
+        case Natur:
+            /* code */
+            break;
+        case Teknisk:
+            /* code */
+            break;
+        case Samfund:
+            /* code */
+            break;
+        case Sundhed:
+            /* code */
+            break;
+        default:
+            break;
     }
     
 
     while (fgets(str, MAXCHAR, file_pointer) != NULL){
-        if (i>0){
+        if (i > 0){
             sscanf( str, "%[^;];%lf;%lf;%lf;%lf;%lf;",
                     weights[i-1].custom_output,
                     &weights[i-1].weight_one,
