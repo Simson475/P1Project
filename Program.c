@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define FACULTYQUESTION 10 
 #define FAKULTETSIZE 5
 #define MAXCHAR 100
 
 typedef struct weight{
     char custom_output[20];
-    double human_weight, natur_weight, teknisk_weight, samfund_weight, sundhed_weight;
+    double weight_one, weight_two, weight_three, weight_four, weight_five;
 }weight;
 
 typedef struct fakulteter{
@@ -16,20 +15,20 @@ typedef struct fakulteter{
     double score;
 }fakulteter;
 
-void load_questions(weight weights[], int choice);
-void get_questions(fakulteter fakultet[], weight weights[]);
+int load_questions(weight weights[], int choice);
+void get_questions(fakulteter fakultet[], weight weights[], int question_amount);
 void question(fakulteter fakultet[], weight weights);
 void get_input(int *input, char custom_output[]);
 
 enum Fakulteter {Humaniora,Natur,Teknisk,Samfund,Sundhed,fakultetsvalg};
 
 int main(void){
-    int i;
-    fakulteter *fakultet= calloc(5,sizeof(fakulteter));
+    int i, question_amount;
+    fakulteter *fakultet= calloc(FAKULTETSIZE,sizeof(fakulteter));
     weight *weights = calloc(11,sizeof(weight));
 
-    load_questions(weights, fakultetsvalg);
-    get_questions(fakultet, weights);
+    question_amount=load_questions(weights, fakultetsvalg);
+    get_questions(fakultet, weights,question_amount);
 
     for (i=0;i<FAKULTETSIZE;i++){
 
@@ -55,10 +54,10 @@ int main(void){
 	
 }
 
-void get_questions(fakulteter fakultet[], weight weights[]){
+void get_questions(fakulteter fakultet[], weight weights[], int question_amount){
     int i=0;
 
-    for ( i = 0; i < FACULTYQUESTION; i++){
+    for ( i = 0; i < question_amount; i++){
         question(fakultet, weights[i]);
     }
     
@@ -70,11 +69,11 @@ void question(fakulteter fakultet[],weight weights){
 
     get_input(&Input, weights.custom_output);
 
-    fakultet[Humaniora].score = fakultet[Humaniora].score + Input*weights.human_weight;
-    fakultet[Natur].score = fakultet[Natur].score + Input*weights.natur_weight;
-    fakultet[Teknisk].score = fakultet[Teknisk].score + Input*weights.teknisk_weight;
-    fakultet[Samfund].score = fakultet[Samfund].score + Input*weights.samfund_weight;
-    fakultet[Sundhed].score = fakultet[Sundhed].score + Input*weights.sundhed_weight;
+    fakultet[Humaniora].score = fakultet[Humaniora].score + Input*weights.weight_one;
+    fakultet[Natur].score = fakultet[Natur].score + Input*weights.weight_two;
+    fakultet[Teknisk].score = fakultet[Teknisk].score + Input*weights.weight_three;
+    fakultet[Samfund].score = fakultet[Samfund].score + Input*weights.weight_four;
+    fakultet[Sundhed].score = fakultet[Sundhed].score + Input*weights.weight_five;
 
     return;
 }
@@ -88,7 +87,7 @@ void get_input(int *Input, char custom_output[]){
     return;
 }
 
-void load_questions(weight weights[],int choice){
+int load_questions(weight weights[],int choice){
     int i=0;
     FILE *file_pointer;
     char str[MAXCHAR];
@@ -122,14 +121,14 @@ void load_questions(weight weights[],int choice){
         if (i>0){
             sscanf( str, "%[^;];%lf;%lf;%lf;%lf;%lf;",
                     weights[i-1].custom_output,
-                    &weights[i-1].human_weight,
-                    &weights[i-1].natur_weight,
-                    &weights[i-1].teknisk_weight,
-                    &weights[i-1].samfund_weight,
-                    &weights[i-1].sundhed_weight);
+                    &weights[i-1].weight_one,
+                    &weights[i-1].weight_two,
+                    &weights[i-1].weight_three,
+                    &weights[i-1].weight_four,
+                    &weights[i-1].weight_five);
         }
         i++;
     }
 
-    return;
+    return i-1;
 }
