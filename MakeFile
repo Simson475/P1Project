@@ -20,6 +20,7 @@ Teknisk.o: Teknisk.c Teknisk.h
 
 utillity.o: utillity.c utillity.h
 	gcc -c -ansi -Wall -pedantic utillity.c 
-	
+
 clean:
 	rm *.o study.exe
+	
