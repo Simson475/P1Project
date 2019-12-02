@@ -7,6 +7,7 @@
 #include "Samfund.h"
 #include "Sundhed.h"
 #include "Teknisk.h"
+#include "fakultet.h"
 
 
 int main(void){
@@ -14,8 +15,16 @@ int main(void){
     fakulteter_struct *fakultet = calloc(FAKULTETSIZE,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
+    name_faculty(fakultet);
     question_amount = load_questions(weights, fakultetsvalg);
     get_questions(fakultet, weights,question_amount);
+    
+
+
+
+
+
+
 
     for (i = 0; i < FAKULTETSIZE; i++){
 
