@@ -3,6 +3,7 @@
 #include <string.h>
 #include "utility.h"
 
+
 void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount){
     int i = 0;
 
@@ -14,10 +15,8 @@ void get_questions(fakulteter_struct fakultet[], weight weights[], int question_
 }
 
 void question(fakulteter_struct fakultet[], weight weights){
-    int Input = 0;
-
-    get_input(&Input, weights.custom_output);
-
+    int Input=get_input(weights.custom_output);
+    
     fakultet[Humaniora].score = fakultet[Humaniora].score + Input*weights.weight_one;
     fakultet[Natur].score = fakultet[Natur].score + Input*weights.weight_two;
     fakultet[Teknisk].score = fakultet[Teknisk].score + Input*weights.weight_three;
@@ -27,13 +26,14 @@ void question(fakulteter_struct fakultet[], weight weights){
     return;
 }
 
-void get_input(int *Input, char custom_output[]){
+int get_input(char custom_output[]){
+    int Input;
     do{
         printf("Hvor glad er du for %s? (1-10)\n", custom_output);
-        scanf("%d", Input);
-    } while (*Input < 1 || *Input > 10);
+        scanf("%d", &Input);
+    } while (Input < 1 || Input > 10);
     
-    return;
+    return Input;
 }
 
 int load_questions(weight weights[], int choice){
@@ -77,16 +77,7 @@ int load_questions(weight weights[], int choice){
         i++;
     }
 
+    fclose(file_pointer);
+
     return i-1;
-}
-
-void name_faculty(fakulteter_struct fakultet[]){
-
-    strcpy(fakultet[Sundhed].navn,"Sundhed");
-    strcpy(fakultet[Humaniora].navn,"Humaniora");
-    strcpy(fakultet[Samfund].navn,"Samfundsfag");
-    strcpy(fakultet[Teknisk].navn,"Teknisk");
-    strcpy(fakultet[Natur].navn,"Naturvidenskab");
-
-    return;
 }

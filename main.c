@@ -11,41 +11,7 @@
 
 
 int main(void){
-    int i, question_amount;
-    fakulteter_struct *fakultet = calloc(FAKULTETSIZE,sizeof(fakulteter_struct));
-    weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
-
-    name_faculty(fakultet);
-    question_amount = load_questions(weights, fakultetsvalg);
-    get_questions(fakultet, weights,question_amount);
-    
-
-
-
-
-
-
-
-    for (i = 0; i < FAKULTETSIZE; i++){
-
-        switch (i){
-            case 0:
-                printf("Humaniora         "); break;
-            case 1:
-                printf("Naturvidenskab    "); break;
-            case 2:
-                printf("Teknik            "); break;
-            case 3:
-                printf("Samfundsvidenskab "); break;
-            case 4:
-                printf("Sundhedsvidenskab "); break;
-            default:
-                printf("Noget gik galt i printet."); break;
-        }
-
-        printf(" %.2lf \n",fakultet[i].score);
-    }
-
+    fakultet_choice();
 	return 0; 
 	
 }
