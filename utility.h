@@ -17,4 +17,4 @@ enum Fakulteter {Humaniora,Natur,Teknisk,Samfund,Sundhed,fakultetsvalg};
 int load_questions(weight weights[], int choice);
 void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount);
 void question(fakulteter_struct fakultet[], weight weights);
-void get_input(int *input, char custom_output[]);
+int get_input(char custom_output[]);
