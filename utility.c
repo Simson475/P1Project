@@ -45,21 +45,16 @@ int load_questions(weight weights[], int choice){
         case fakultetsvalg:
             file_pointer=fopen("Operator_File.csv","r");
             break;
-        case Humaniora:
-            /* code */
+        /*case Humaniora:
             break;
         case Natur:
-            /* code */
             break;
         case Teknisk:
-            /* code */
             break;
         case Samfund:
-            /* code */
             break;
         case Sundhed:
-            /* code */
-            break;
+            break;*/
         default:
             break;
     }
