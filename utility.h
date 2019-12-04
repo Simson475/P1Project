@@ -1,5 +1,5 @@
 #define FAKULTETSIZE 5
-#define MAXCHAR 100
+#define MAXCHAR 1000
 #define MAXEDUCATIONS 20
 
 typedef struct weight{
