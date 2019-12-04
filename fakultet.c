@@ -14,34 +14,8 @@ void Decide_faculty(){
     
     for (i = 0; i < FAKULTETSIZE; i++){
 
-        /**switch (i){
-            case 0:
-                printf("Humaniora         "); break;
-            case 1:
-                printf("Naturvidenskab    "); break;
-            case 2:
-                printf("Teknik            "); break;
-            case 3:
-                printf("Samfundsvidenskab "); break;
-            case 4:
-                printf("Sundhedsvidenskab "); break;
-            default:
-                printf("Noget gik galt i printet."); break;
-        }*/
-
         printf("%s %.2lf \n",fakultet[i].navn,fakultet[i].score);
     }
     
-    return;
-}
-
-void name_faculty(fakulteter_struct fakultet[]){
-
-    strcpy(fakultet[Sundhed].navn,"Sundhed");
-    strcpy(fakultet[Humaniora].navn,"Humaniora");
-    strcpy(fakultet[Samfund].navn,"Samfundsfag");
-    strcpy(fakultet[Teknisk].navn,"Teknisk");
-    strcpy(fakultet[Natur].navn,"Naturvidenskab");
-
     return;
 }
