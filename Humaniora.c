@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utility.h"
+#include "Humaniora.h"
+
+void Decide_Human(){
+
+return;
+}
