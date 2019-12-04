@@ -17,18 +17,18 @@ void get_questions(fakulteter_struct choices[], weight weights[], int question_a
 void question(fakulteter_struct choices[], weight weights){
     int input = get_input(weights.custom_output);
     
-    sizeof(choices) > 0  ? choices[0].score  = choices[0].score  + input*weights.weight_one    : 0;
-    sizeof(choices) > 1  ? choices[1].score  = choices[1].score  + input*weights.weight_two    : 0;
-    sizeof(choices) > 2  ? choices[2].score  = choices[2].score  + input*weights.weight_three  : 0;
-    sizeof(choices) > 3  ? choices[3].score  = choices[3].score  + input*weights.weight_four   : 0;
-    sizeof(choices) > 4  ? choices[4].score  = choices[4].score  + input*weights.weight_five   : 0;
-    sizeof(choices) > 5  ? choices[5].score  = choices[5].score  + input*weights.weight_six    : 0;
-    sizeof(choices) > 6  ? choices[6].score  = choices[6].score  + input*weights.weight_seven  : 0;
-    sizeof(choices) > 7  ? choices[7].score  = choices[7].score  + input*weights.weight_eight  : 0;
-    sizeof(choices) > 8  ? choices[8].score  = choices[8].score  + input*weights.weight_nine   : 0;
-    sizeof(choices) > 9  ? choices[9].score  = choices[9].score  + input*weights.weight_ten    : 0;
-    sizeof(choices) > 10 ? choices[10].score = choices[10].score + input*weights.weight_eleven : 0;
-    sizeof(choices) > 11 ? choices[11].score = choices[11].score + input*weights.weight_twelve : 0;
+    choices[0].score  = choices[0].score  + input*weights.weight_one    ;
+    choices[1].score  = choices[1].score  + input*weights.weight_two    ;
+    choices[2].score  = choices[2].score  + input*weights.weight_three  ;
+    choices[3].score  = choices[3].score  + input*weights.weight_four   ;
+    choices[4].score  = choices[4].score  + input*weights.weight_five   ;
+    choices[5].score  = choices[5].score  + input*weights.weight_six    ;
+    choices[6].score  = choices[6].score  + input*weights.weight_seven  ;
+    choices[7].score  = choices[7].score  + input*weights.weight_eight  ;
+    choices[8].score  = choices[8].score  + input*weights.weight_nine   ;
+    choices[9].score  = choices[9].score  + input*weights.weight_ten    ;
+    choices[10].score = choices[10].score + input*weights.weight_eleven ;
+    choices[11].score = choices[11].score + input*weights.weight_twelve ;
 
     return;
 }
@@ -84,7 +84,7 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
                     &weights[i-1].weight_twelve);
         }
         else if (i == 0){
-            sscanf(str, ";%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;", 
+            sscanf(str, "%*[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ]", 
                    names[0].navn,
                    names[1].navn,
                    names[2].navn,

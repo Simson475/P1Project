@@ -9,13 +9,12 @@ void Decide_faculty(){
     fakulteter_struct *fakultet = calloc(FAKULTETSIZE,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
-    name_faculty(fakultet);
     question_amount = load_questions(weights, fakultetsvalg, fakultet);
     get_questions(fakultet, weights,question_amount);
     
     for (i = 0; i < FAKULTETSIZE; i++){
 
-        switch (i){
+        /**switch (i){
             case 0:
                 printf("Humaniora         "); break;
             case 1:
@@ -28,9 +27,9 @@ void Decide_faculty(){
                 printf("Sundhedsvidenskab "); break;
             default:
                 printf("Noget gik galt i printet."); break;
-        }
+        }*/
 
-        printf(" %.2lf \n",fakultet[i].score);
+        printf("%s %.2lf \n",fakultet[i].navn,fakultet[i].score);
     }
     
     return;
