@@ -15,34 +15,35 @@ void get_questions(fakulteter_struct choices[], weight weights[], int question_a
 }
 
 void question(fakulteter_struct choices[], weight weights){
-    int Input = get_input(weights.custom_output);
+    int input = get_input(weights.custom_output);
     
-    choices[0].score  = choices[0].score  + Input*weights.weight_one;
-    choices[1].score  = choices[1].score  + Input*weights.weight_two;
-    choices[2].score  = choices[2].score  + Input*weights.weight_three;
-    choices[3].score  = choices[3].score  + Input*weights.weight_four;
-    choices[4].score  = choices[4].score  + Input*weights.weight_five;
-    choices[5].score  = choices[5].score  + Input*weights.weight_six;
-    choices[6].score  = choices[6].score  + Input*weights.weight_seven;
-    choices[7].score  = choices[7].score  + Input*weights.weight_eight;
-    choices[8].score  = choices[8].score  + Input*weights.weight_nine;
-    choices[9].score  = choices[9].score  + Input*weights.weight_ten;
-    choices[10].score = choices[10].score + Input*weights.weight_eleven;
-    choices[11].score = choices[11].score + Input*weights.weight_twelve;
+    sizeof(choices) > 0  ? choices[0].score  = choices[0].score  + input*weights.weight_one    : 0;
+    sizeof(choices) > 1  ? choices[1].score  = choices[1].score  + input*weights.weight_two    : 0;
+    sizeof(choices) > 2  ? choices[2].score  = choices[2].score  + input*weights.weight_three  : 0;
+    sizeof(choices) > 3  ? choices[3].score  = choices[3].score  + input*weights.weight_four   : 0;
+    sizeof(choices) > 4  ? choices[4].score  = choices[4].score  + input*weights.weight_five   : 0;
+    sizeof(choices) > 5  ? choices[5].score  = choices[5].score  + input*weights.weight_six    : 0;
+    sizeof(choices) > 6  ? choices[6].score  = choices[6].score  + input*weights.weight_seven  : 0;
+    sizeof(choices) > 7  ? choices[7].score  = choices[7].score  + input*weights.weight_eight  : 0;
+    sizeof(choices) > 8  ? choices[8].score  = choices[8].score  + input*weights.weight_nine   : 0;
+    sizeof(choices) > 9  ? choices[9].score  = choices[9].score  + input*weights.weight_ten    : 0;
+    sizeof(choices) > 10 ? choices[10].score = choices[10].score + input*weights.weight_eleven : 0;
+    sizeof(choices) > 11 ? choices[11].score = choices[11].score + input*weights.weight_twelve : 0;
+
     return;
 }
 
 int get_input(char custom_output[]){
-    int Input;
+    int input;
     do{
         printf("Hvor glad er du for %s? (1-10)\n", custom_output);
-        scanf("%d", &Input);
-    } while (Input < 1 || Input > 10);
+        scanf("%d", &input);
+    } while (input < 1 || input > 10);
     
-    return Input;
+    return input;
 }
 
-int load_questions(weight weights[], int choice){
+int load_questions(weight weights[], int choice, fakulteter_struct names[]){
     int i = 0;
     FILE *file_pointer;
     char str[MAXCHAR];
@@ -81,6 +82,21 @@ int load_questions(weight weights[], int choice){
                     &weights[i-1].weight_ten,
                     &weights[i-1].weight_eleven,
                     &weights[i-1].weight_twelve);
+        }
+        else if (i == 0){
+            sscanf(str, ";%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;", 
+                   names[0].navn,
+                   names[1].navn,
+                   names[2].navn,
+                   names[3].navn,
+                   names[4].navn,
+                   names[5].navn,
+                   names[6].navn,
+                   names[7].navn,
+                   names[8].navn,
+                   names[9].navn,
+                   names[10].navn,
+                   names[11].navn);
         }
         i++;
     }

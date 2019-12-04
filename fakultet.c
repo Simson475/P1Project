@@ -10,7 +10,7 @@ void Decide_faculty(){
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
     name_faculty(fakultet);
-    question_amount = load_questions(weights, fakultetsvalg);
+    question_amount = load_questions(weights, fakultetsvalg, fakultet);
     get_questions(fakultet, weights,question_amount);
     
     for (i = 0; i < FAKULTETSIZE; i++){
