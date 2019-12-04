@@ -21,7 +21,7 @@ int main(void){
 void Choose_faculty(){ /*Funktion hvor brugeren vælger ønsket studie*/
     int Faculty_Input;
     printf("Vaelg dit oenskede fakultet:\n");
-    printf("0 : Humaniora\n 1 : Naturvidenskab\n2 : Teknisk\n 3 : Samfundsfagligt\n 4 : Sundheds\n");
+    printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknisk\n3 : Samfundsfagligt\n4 : Sundheds\n");
     scanf("%d",&Faculty_Input);
 
     switch (Faculty_Input){
