@@ -50,25 +50,30 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
 
     switch (choice){
         case fakultetsvalg:
-            file_pointer=fopen("Fakultet_weight.csv","r");
+            file_pointer=fopen("operator_fakultet_file.csv","r");
             break;
-        /*case Humaniora:
+        case Humaniora:
+            file_pointer=fopen("operator_human_file.csv","r");
             break;
         case Natur:
+            file_pointer=fopen("operator_natur_file.csv","r");
             break;
         case Teknisk:
+            file_pointer=fopen("operator_teknik_file.csv","r");
             break;
         case Samfund:
+            file_pointer=fopen("operator_samfund_file.csv","r");
             break;
         case Sundhed:
-            break;*/
+            file_pointer=fopen("operator_sundhed_file.csv","r");
+            break;
         default:
             break;
     }
     
     while (fgets(str, MAXCHAR, file_pointer) != NULL){
         if (i > 0){
-            sscanf(str, "%[^;];%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;",
+            sscanf(str, "%[^,],%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,",
                      weights[i-1].custom_output,
                     &weights[i-1].weight_one,
                     &weights[i-1].weight_two,
@@ -84,7 +89,7 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
                     &weights[i-1].weight_twelve);
         }
         else if (i == 0){
-            sscanf(str, "%*[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ];%[^;\n ]", 
+            sscanf(str, "%*[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n]", 
                    names[0].navn,
                    names[1].navn,
                    names[2].navn,
