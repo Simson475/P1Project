@@ -11,7 +11,32 @@
 
 
 int main(void){
-    fakultet_choice();
+    Decide_faculty();
+    Choose_faculty();
 	return 0; 
 	
+}
+
+
+void Choose_faculty(){
+    int Faculty_Input;
+    printf("Vælg dit ønskede fakultet:\n");
+    printf("0 : Humaniora")
+    scanf("%d",&Faculty_Input);
+
+    switch (Faculty_Input)    {
+    case Humaniora: 
+        break;
+    case Natur:
+        break;
+    case Teknisk:
+        break;
+    case Samfund:
+        break;
+    case Sundhed:
+        break;
+    
+    default:
+        break;
+    }
 }
