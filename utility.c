@@ -15,18 +15,18 @@ void get_questions(fakulteter_struct choices[], weight weights[], int question_a
 }
 
 void question(fakulteter_struct choices[], weight weights){
-    int Input=get_input(weights.custom_output);
+    int Input = get_input(weights.custom_output);
     
-    choices[0].score = choices[0].score + Input*weights.weight_one;
-    choices[1].score = choices[1].score + Input*weights.weight_two;
-    choices[2].score = choices[2].score + Input*weights.weight_three;
-    choices[3].score = choices[3].score + Input*weights.weight_four;
-    choices[4].score = choices[4].score + Input*weights.weight_five;
-    choices[5].score = choices[5].score + Input*weights.weight_six;
-    choices[6].score = choices[6].score + Input*weights.weight_seven;
-    choices[7].score = choices[7].score + Input*weights.weight_eight;
-    choices[8].score = choices[8].score + Input*weights.weight_nine;
-    choices[9].score = choices[9].score + Input*weights.weight_ten;
+    choices[0].score  = choices[0].score  + Input*weights.weight_one;
+    choices[1].score  = choices[1].score  + Input*weights.weight_two;
+    choices[2].score  = choices[2].score  + Input*weights.weight_three;
+    choices[3].score  = choices[3].score  + Input*weights.weight_four;
+    choices[4].score  = choices[4].score  + Input*weights.weight_five;
+    choices[5].score  = choices[5].score  + Input*weights.weight_six;
+    choices[6].score  = choices[6].score  + Input*weights.weight_seven;
+    choices[7].score  = choices[7].score  + Input*weights.weight_eight;
+    choices[8].score  = choices[8].score  + Input*weights.weight_nine;
+    choices[9].score  = choices[9].score  + Input*weights.weight_ten;
     choices[10].score = choices[10].score + Input*weights.weight_eleven;
     choices[11].score = choices[11].score + Input*weights.weight_twelve;
     return;
@@ -67,8 +67,8 @@ int load_questions(weight weights[], int choice){
     
     while (fgets(str, MAXCHAR, file_pointer) != NULL){
         if (i > 0){
-            sscanf( str, "%[^;];%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;",
-                    weights[i-1].custom_output,
+            sscanf(str, "%[^;];%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;%lf;",
+                     weights[i-1].custom_output,
                     &weights[i-1].weight_one,
                     &weights[i-1].weight_two,
                     &weights[i-1].weight_three,
