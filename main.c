@@ -9,6 +9,7 @@
 #include "Teknisk.h"
 #include "fakultet.h"
 
+void Choose_faculty();
 
 int main(void){
     Decide_faculty();
@@ -17,26 +18,21 @@ int main(void){
 	
 }
 
-
-void Choose_faculty(){
+void Choose_faculty(){ /*Funktion hvor brugeren vælger ønsket studie*/
     int Faculty_Input;
-    printf("Vælg dit ønskede fakultet:\n");
-    printf("0 : Humaniora")
+    printf("Vaelg dit oenskede fakultet:\n");
+    printf("0 : Humaniora\n 1 : Naturvidenskab\n2 : Teknisk\n 3 : Samfundsfagligt\n 4 : Sundheds\n");
     scanf("%d",&Faculty_Input);
 
-    switch (Faculty_Input)    {
-    case Humaniora: 
-        break;
-    case Natur:
-        break;
-    case Teknisk:
-        break;
-    case Samfund:
-        break;
-    case Sundhed:
-        break;
-    
-    default:
-        break;
+    switch (Faculty_Input){
+        case Humaniora: Decide_Human();break;
+        case Natur: Decide_Nature();break;
+        case Teknisk: Decide_Teknisk();break;
+        case Samfund: Decide_Samfund();break;
+        case Sundhed: Decide_Sundhed();break;
+        default:break;
     }
+
+    return;
+
 }
