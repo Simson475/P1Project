@@ -109,3 +109,17 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
 
     return i-1;
 }
+
+void sort_by_score (fakulteter_struct choice[]) {
+    
+    qsort(choice, FAKULTETSIZE, sizeof(struct fakulteter_struct), compare);
+    
+    return;
+}
+
+int compare (const void *a, const void *b) {
+    struct fakulteter_struct *ia = (struct fakulteter_struct *)a;
+    struct fakulteter_struct *ib = (struct fakulteter_struct *)b;
+
+    return (ia -> score - ib -> score);
+}
