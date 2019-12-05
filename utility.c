@@ -121,5 +121,5 @@ int compare (const void *a, const void *b) {
     struct fakulteter_struct *ia = (struct fakulteter_struct *)a;
     struct fakulteter_struct *ib = (struct fakulteter_struct *)b;
 
-    return (ia -> score - ib -> score);
+    return (ib -> score - ia -> score);
 }
