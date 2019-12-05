@@ -1,15 +1,16 @@
 #define FAKULTETSIZE 5
 #define MAXCHAR 1000
 #define MAXEDUCATIONS 20
+#define MAX_STR 50
 
 typedef struct weight{
-    char custom_output[20];
+    char custom_output[MAX_STR];
     double weight_one, weight_two, weight_three, weight_four, weight_five, weight_six,
            weight_seven, weight_eight, weight_nine, weight_ten, weight_eleven, weight_twelve;
 } weight;
 
 typedef struct fakulteter_struct{
-    char navn[30];
+    char navn[MAX_STR];
     double score;
 } fakulteter_struct;
 
