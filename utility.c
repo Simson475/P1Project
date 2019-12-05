@@ -112,7 +112,7 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
 
 void sort_by_score (fakulteter_struct choice[]) {
     
-    qsort(choice, FAKULTETSIZE, sizeof(struct fakulteter_struct), compare);
+    qsort(choice, MAXEDUCATIONS, sizeof(struct fakulteter_struct), compare);
     
     return;
 }
@@ -121,5 +121,18 @@ int compare (const void *a, const void *b) {
     struct fakulteter_struct *ia = (struct fakulteter_struct *)a;
     struct fakulteter_struct *ib = (struct fakulteter_struct *)b;
 
-    return (ia -> score - ib -> score);
+    return (ib -> score - ia -> score);
+}
+
+void Result(fakulteter_struct choice[], char name[]){
+
+    FILE *File_pointer;
+    char file_name[30];
+    sprintf(file_name,"%s.txt",name);
+    File_pointer = fopen(file_name,"w");
+
+    fprintf(File_pointer,"Navn: %s\n Prioriterede uddannelser:\n1. %s\n2. %s\n3. %s\n",
+                        name,choice[0].navn,choice[1].navn,choice[2].navn);
+    fclose(File_pointer);
+
 }
