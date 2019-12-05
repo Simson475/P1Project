@@ -26,7 +26,7 @@ void Choose_faculty(){ /*Funktion hvor brugeren vælger ønsket studie*/
     scanf("%d",&Faculty_Input);
 
     switch (Faculty_Input){
-        case Humaniora: Decide_Human();break;
+        case Humaniora: Decide_Humaniora();break;
         case Natur: Decide_Nature();break;
         case Teknisk: Decide_Teknisk();break;
         case Samfund: Decide_Samfund();break;
@@ -38,7 +38,7 @@ void Choose_faculty(){ /*Funktion hvor brugeren vælger ønsket studie*/
 
 }
 
-void Result(fakulteter_struct choice[], char name[], ){
+void Result(fakulteter_struct choice[], char name[]){
 
     FILE *File_pointer;
     char file_name[30];

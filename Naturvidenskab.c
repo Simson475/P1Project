@@ -4,6 +4,6 @@
 #include "utility.h"
 #include "Naturvidenskab.h"
 
-void Decide_Natur(){
+void Decide_Nature(){
     
 }

@@ -89,7 +89,7 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
                     &weights[i-1].weight_twelve);
         }
         else if (i == 0){
-            sscanf(str, "%*[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n]", 
+            sscanf(str, ",%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n]", 
                    names[0].navn,
                    names[1].navn,
                    names[2].navn,

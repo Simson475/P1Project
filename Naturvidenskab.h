@@ -1,1 +1,1 @@
-void Decide_Natur();
+void Decide_Nature();
