@@ -3,3 +3,8 @@
 #include <string.h>
 #include "utility.h"
 #include "Humaniora.h"
+
+
+void Decide_Humaniora(){
+    
+}
