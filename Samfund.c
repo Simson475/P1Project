@@ -4,3 +4,6 @@
 #include "utility.h"
 #include "Samfund.h"
 
+void Decide_Samfund(){
+    
+}
