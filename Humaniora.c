@@ -5,6 +5,6 @@
 #include "Humaniora.h"
 
 
-void Decide_Human(){
+void Decide_Humaniora(){
     
 }
