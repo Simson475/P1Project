@@ -21,3 +21,4 @@ void question(fakulteter_struct fakultet[], weight weights);
 int get_input(char custom_output[]);
 void sort_by_score (fakulteter_struct choice[]);
 int compare (const void *a, const void *b);
+void Result(fakulteter_struct choice[], char name[]);

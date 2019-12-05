@@ -123,3 +123,16 @@ int compare (const void *a, const void *b) {
 
     return (ib -> score - ia -> score);
 }
+
+void Result(fakulteter_struct choice[], char name[]){
+
+    FILE *File_pointer;
+    char file_name[30];
+    sprintf(file_name,"%s.txt",name);
+    File_pointer = fopen(file_name,"w");
+
+    fprintf(File_pointer,"Navn: %s\n Prioriterede uddannelser:\n1. %s\n2. %s\n3. %s\n",
+                        name,choice[0].navn,choice[1].navn,choice[2].navn);
+    fclose(File_pointer);
+
+}
