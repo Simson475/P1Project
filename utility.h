@@ -19,3 +19,5 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]);
 void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount);
 void question(fakulteter_struct fakultet[], weight weights);
 int get_input(char custom_output[]);
+void sort_by_score (fakulteter_struct choice[]);
+int compare (const void *a, const void *b);
