@@ -10,9 +10,12 @@
 #include "fakultet.h"
 
 void Choose_faculty(char* Name);
+void Info_screen();
 
 int main(void){
-    char* Name = Get_users_name();
+    char* Name;
+    Info_screen();
+    Name = Get_users_name();
     Decide_faculty();
     Choose_faculty(Name);
 	return 0; 
@@ -37,5 +40,17 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
 
     return;
 
+}
+
+void Info_screen(){
+    printf("Denne test fungere ved at du vil blive spurgt indtil din interesse for forskellige gymnasiefag.\n");
+    printf("Du vil blive bedt om at tilkendegive din interesse fra 1-10.\n");
+    printf("Paa baggrund af dine interesser foreslaaes et fakultet, som passer til specifikt til dig.\n");
+    printf("Du vaelger selv hvilket fakultet du oensker at fortsaette testen med.\n");
+    printf("Herfter skal du igen tilkendegive din interesse (1-10) i forskellige emner, indenfor det valgte fakultet\n");
+    printf("Programmet foreslaar 5 studieretninger, som vil passe godt til dig. Listen gemmes også i en tekstfil: 'dit navn'.exe\n");
+    printf("**Denne test er kun vejledende og boer anvendes i samarbejder med en studievejleder**\n\n");
+
+    
 }
 
