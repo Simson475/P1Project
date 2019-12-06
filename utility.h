@@ -5,9 +5,9 @@
 #define NAME_SIZE 20
 
 typedef struct weight{
-    char custom_output[MAX_STR];
-    double weight_one, weight_two, weight_three, weight_four, weight_five, weight_six,
-           weight_seven, weight_eight, weight_nine, weight_ten, weight_eleven, weight_twelve;
+    char Custom_output[MAX_STR];
+    double Weight_one, Weight_two, Weight_three, Weight_four, Weight_five, Weight_six,
+           Weight_seven, Weight_eight, Weight_nine, Weight_ten, Weight_eleven, Weight_twelve;
 } weight;
 
 typedef struct fakulteter_struct{

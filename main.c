@@ -18,28 +18,28 @@ int main(void){
     Name = Get_users_name();
     Decide_faculty();
     Choose_faculty(Name);
+    
 	return 0; 
-	
 }
 
 void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie*/
-    int Faculty_Input;
+    int Faculty_input;
     do{
         printf("\nVaelg dit oenskede fakultet:\n");
-        printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknisk\n3 : Samfundsfagligt\n4 : Sundheds\n");
-        scanf("%d",&Faculty_Input);
+        printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknik\n3 : Samfundsfag\n4 : Sundhed\n");
+        scanf("%d", &Faculty_input);
         printf("---------------------------------------------------\n");
 
-        switch (Faculty_Input){
-            case Humaniora: Decide_Humaniora(Name);break;
-            case Natur: Decide_Nature(Name);break;
-            case Teknisk: Decide_Teknisk(Name);break;
-            case Samfund: Decide_Samfund(Name);break;
-            case Sundhed: Decide_Sundhed(Name);break;
-            default:break;
+        switch (Faculty_input){
+            case Humaniora: Decide_humaniora(Name);break;
+            case Natur:     Decide_nature(Name);   break;
+            case Teknisk:   Decide_teknisk(Name);  break;
+            case Samfund:   Decide_samfund(Name);  break;
+            case Sundhed:   Decide_sundhed(Name);  break;
+            default: break;
         }
     }
-    while (Faculty_Input < 0 || Faculty_Input > 4);
+    while (Faculty_input < 0 || Faculty_input > 4);
 
     return;
 
