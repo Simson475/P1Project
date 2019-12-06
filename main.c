@@ -31,11 +31,11 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
         printf("---------------------------------------------------\n");
 
         switch (Faculty_Input){
-            case Humaniora: Decide_Humaniora(Name);break;
-            case Natur: Decide_Nature(Name);break;
-            case Teknisk: Decide_Teknisk(Name);break;
-            case Samfund: Decide_Samfund(Name);break;
-            case Sundhed: Decide_Sundhed(Name);break;
+            case Humaniora: Decide_humaniora(Name);break;
+            case Natur: Decide_nature(Name);break;
+            case Teknisk: Decide_teknisk(Name);break;
+            case Samfund: Decide_samfund(Name);break;
+            case Sundhed: Decide_sundhed(Name);break;
             default:break;
         }
     }
