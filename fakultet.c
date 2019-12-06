@@ -6,7 +6,7 @@
 
 void Decide_faculty(){
     int i, question_amount;
-    fakulteter_struct *fakultet = calloc(FAKULTETSIZE,sizeof(fakulteter_struct));
+    fakulteter_struct *fakultet = calloc(MAXEDUCATIONS,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
     question_amount = load_questions(weights, fakultetsvalg, fakultet);
