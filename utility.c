@@ -150,6 +150,7 @@ char* Get_users_name(){
     char* Name = calloc(NAME_SIZE,sizeof(char));
     printf("Indtast navn: \n");
     scanf("%s", Name);
+    printf("---------------------------------------------------\n");
 
     return Name;
 }

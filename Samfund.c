@@ -9,6 +9,7 @@ void Decide_Samfund(char* Name){
     fakulteter_struct *samfund_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
 
+    printf("Besvar foelgende: \n");
     question_amount = load_questions(weights, Samfund, samfund_fakultet);
     get_questions(samfund_fakultet, weights, question_amount);
     sort_by_score(samfund_fakultet);

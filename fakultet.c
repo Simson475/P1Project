@@ -9,6 +9,7 @@ void Decide_faculty(){
     fakulteter_struct *fakultet = calloc(MAXEDUCATIONS,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
+    printf("Besvar foelgende: \n");
     question_amount = load_questions(weights, fakultetsvalg, fakultet);
     get_questions(fakultet, weights,question_amount);
     sort_by_score(fakultet);
