@@ -1,4 +1,4 @@
-#define FAKULTETSIZE 5
+#define PRINTSIZE 5
 #define MAXCHAR 1000
 #define MAXEDUCATIONS 20
 #define MAX_STR 50
@@ -25,3 +25,4 @@ void sort_by_score (fakulteter_struct choice[]);
 int compare (const void *a, const void *b);
 void Result(fakulteter_struct choice[], char name[]);
 char* Get_users_name();
+void print_on_screen(fakulteter_struct choice[]);
