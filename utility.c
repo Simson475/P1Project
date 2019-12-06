@@ -89,7 +89,7 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
                     &weights[i-1].weight_twelve);
         }
         else if (i == 0){
-            sscanf(str, "%*[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n]", 
+            sscanf(str, ",%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n],%[^,\n]", 
                    names[0].navn,
                    names[1].navn,
                    names[2].navn,
@@ -108,4 +108,39 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]){
     fclose(file_pointer);
 
     return i-1;
+}
+
+void sort_by_score (fakulteter_struct choice[]) {
+    
+    qsort(choice, MAXEDUCATIONS, sizeof(struct fakulteter_struct), compare);
+    
+    return;
+}
+
+int compare (const void *a, const void *b) {
+    struct fakulteter_struct *ia = (struct fakulteter_struct *)a;
+    struct fakulteter_struct *ib = (struct fakulteter_struct *)b;
+
+    return (ib -> score - ia -> score);
+}
+
+void Result(fakulteter_struct choice[], char name[]){
+
+    FILE *File_pointer;
+    char file_name[30];
+    sprintf(file_name,"%s.txt",name);
+    File_pointer = fopen(file_name,"w");
+
+    fprintf(File_pointer,"Navn: %s\n Prioriterede uddannelser:\n1. %s\n2. %s\n3. %s\n4. %s\n5. %s\n",
+                        name,choice[0].navn,choice[1].navn,choice[2].navn,choice[3].navn,choice[4].navn);
+    fclose(File_pointer);
+
+}
+
+char* Get_users_name(){
+    char* Name = calloc(NAME_SIZE,sizeof(char));
+    printf("Indtast navn: \n");
+    scanf("%s", Name);
+
+    return Name;
 }

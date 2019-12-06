@@ -1,15 +1,17 @@
 #define FAKULTETSIZE 5
 #define MAXCHAR 1000
 #define MAXEDUCATIONS 20
+#define MAX_STR 50
+#define NAME_SIZE 20
 
 typedef struct weight{
-    char custom_output[20];
+    char custom_output[MAX_STR];
     double weight_one, weight_two, weight_three, weight_four, weight_five, weight_six,
            weight_seven, weight_eight, weight_nine, weight_ten, weight_eleven, weight_twelve;
 } weight;
 
 typedef struct fakulteter_struct{
-    char navn[30];
+    char navn[MAX_STR];
     double score;
 } fakulteter_struct;
 
@@ -19,3 +21,7 @@ int load_questions(weight weights[], int choice, fakulteter_struct names[]);
 void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount);
 void question(fakulteter_struct fakultet[], weight weights);
 int get_input(char custom_output[]);
+void sort_by_score (fakulteter_struct choice[]);
+int compare (const void *a, const void *b);
+void Result(fakulteter_struct choice[], char name[]);
+char* Get_users_name();

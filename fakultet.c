@@ -11,10 +11,12 @@ void Decide_faculty(){
 
     question_amount = load_questions(weights, fakultetsvalg, fakultet);
     get_questions(fakultet, weights,question_amount);
-    
-    for (i = 0; i < FAKULTETSIZE; i++){
+    sort_by_score(fakultet);
 
-        printf("%s %.2lf \n",fakultet[i].navn,fakultet[i].score);
+    printf("\n");
+
+    for (i = 0; i < FAKULTETSIZE; i++){
+        printf("%-14s %.2lf \n",fakultet[i].navn,fakultet[i].score);
     }
     
     return;
