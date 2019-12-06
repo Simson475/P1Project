@@ -1,1 +1,1 @@
-void Decide_Samfund();
+void Decide_Samfund(char* Name);
