@@ -2,6 +2,7 @@
 #define MAXCHAR 1000
 #define MAXEDUCATIONS 20
 #define MAX_STR 50
+#define NAME_SIZE 20
 
 typedef struct weight{
     char custom_output[MAX_STR];
