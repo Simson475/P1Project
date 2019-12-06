@@ -5,7 +5,7 @@
 #include "fakultet.h"
 
 void Decide_faculty(){
-    int i, question_amount;
+    int question_amount;
     fakulteter_struct *fakultet = calloc(MAXEDUCATIONS,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
 
@@ -14,10 +14,9 @@ void Decide_faculty(){
     sort_by_score(fakultet);
 
     printf("\n");
+    print_on_screen(fakultet);
 
-    for (i = 0; i < FAKULTETSIZE; i++){
-        printf("%-14s %.2lf \n",fakultet[i].navn,fakultet[i].score);
-    }
-    
+    free(fakultet);
+    free(weights);
     return;
 }

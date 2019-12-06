@@ -5,7 +5,7 @@
 #include "Teknisk.h"
 
 void Decide_Teknisk(char* Name){
-    int i, question_amount;
+    int question_amount;
     fakulteter_struct *teknisk_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
 
@@ -13,19 +13,8 @@ void Decide_Teknisk(char* Name){
     get_questions(teknisk_fakultet, weights, question_amount);
     sort_by_score(teknisk_fakultet);
     Result(teknisk_fakultet, Name);
-
-    for (i = 0; i <= MAXEDUCATIONS; i++){
-        if (teknisk_fakultet[i].score != 0){
-           printf("%s %.2lf \n", teknisk_fakultet[i].navn, teknisk_fakultet[i].score);
-        }
-        else {
-            free(teknisk_fakultet);
-            free(weights);
-            return;
-        }
+    print_on_screen(teknisk_fakultet);
         
-        
-    }
     free(teknisk_fakultet);
     free(weights);
     return;
