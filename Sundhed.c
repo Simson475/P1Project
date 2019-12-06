@@ -5,14 +5,14 @@
 #include "Sundhed.h"
 
 void Decide_Sundhed(char* Name){
-     int i, question_amount;
+    int i, question_amount;
     fakulteter_struct *sundhed_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
 
     question_amount = load_questions(weights, Sundhed, sundhed_fakultet);
     get_questions(sundhed_fakultet, weights, question_amount);
     sort_by_score(sundhed_fakultet);
-    Result(sundhed_fakultet, "Simon");
+    Result(sundhed_fakultet, Name);
 
     for (i = 0; i <= MAXEDUCATIONS; i++){
         if (sundhed_fakultet[i].score != 0){

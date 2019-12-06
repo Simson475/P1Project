@@ -12,7 +12,7 @@ void Decide_Nature(char* Name){
     question_amount = load_questions(weights, Natur, naturvidenskab_fakultet);
     get_questions(naturvidenskab_fakultet, weights, question_amount);
     sort_by_score(naturvidenskab_fakultet);
-    Result(naturvidenskab_fakultet, "Simon");
+    Result(naturvidenskab_fakultet, Name);
 
     for (i = 0; i <= MAXEDUCATIONS; i++){
         if (naturvidenskab_fakultet[i].score != 0){
