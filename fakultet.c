@@ -13,9 +13,10 @@ void Decide_faculty(){
     get_questions(fakultet, weights,question_amount);
     sort_by_score(fakultet);
 
-    for (i = 0; i < FAKULTETSIZE; i++){
+    printf("\n");
 
-        printf("%s %.2lf \n",fakultet[i].navn,fakultet[i].score);
+    for (i = 0; i < FAKULTETSIZE; i++){
+        printf("%-14s %.2lf \n",fakultet[i].navn,fakultet[i].score);
     }
     
     return;
