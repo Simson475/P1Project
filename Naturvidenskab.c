@@ -4,7 +4,7 @@
 #include "utility.h"
 #include "Naturvidenskab.h"
 
-void Decide_Nature(){
+void Decide_Nature(char* Name){
     int i, question_amount;
     fakulteter_struct *naturvidenskab_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));

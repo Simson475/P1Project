@@ -5,7 +5,7 @@
 #include "Humaniora.h"
 
 
-void Decide_Humaniora(){
+void Decide_Humaniora(char* Name){
     int i, question_amount;
     fakulteter_struct *human_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));

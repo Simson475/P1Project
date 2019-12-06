@@ -4,7 +4,7 @@
 #include "utility.h"
 #include "Samfund.h"
 
-void Decide_Samfund(){
+void Decide_Samfund(char* Name){
     int i, question_amount;
     fakulteter_struct *samfund_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));

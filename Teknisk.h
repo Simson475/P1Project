@@ -1,1 +1,1 @@
-void Decide_Teknisk();
+void Decide_Teknisk(char* Name);
