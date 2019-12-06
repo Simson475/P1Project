@@ -129,14 +129,19 @@ int compare (const void *a, const void *b) {
 }
 
 void Result(fakulteter_struct choice[], char name[]){
-
+    int i=0;
     FILE *File_pointer;
     char file_name[30];
     sprintf(file_name,"%s.txt",name);
     File_pointer = fopen(file_name,"w");
 
-    fprintf(File_pointer,"Navn: %s\nPrioriterede uddannelser:\n1. %s\n2. %s\n3. %s\n4. %s\n5. %s\n",
-                        name,choice[0].navn,choice[1].navn,choice[2].navn,choice[3].navn,choice[4].navn);
+        fprintf(File_pointer,"Navn: %s\nPrioriterede uddannelser:\n",name);
+    while (choice[i].score!=0 && i<5){
+        fprintf(File_pointer,"%d. %s\n",i+1,choice[i].navn);
+        i++;
+    }
+    
+
     fclose(File_pointer);
 
 }
