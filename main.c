@@ -43,7 +43,7 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
 }
 
 void Info_screen(){
-    printf("Denne test fungere ved at du vil blive spurgt indtil din interesse for forskellige gymnasiefag.\n");
+    printf("Denne test fungere ved at du vil blive spurgt ind til din interesse for forskellige gymnasiefag.\n");
     printf("Du vil blive bedt om at tilkendegive din interesse fra 1-10.\n");
     printf("Paa baggrund af dine interesser foreslaaes et fakultet, som passer til specifikt til dig.\n");
     printf("Du vaelger selv hvilket fakultet du oensker at fortsaette testen med.\n");
