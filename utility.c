@@ -148,7 +148,7 @@ char* Get_users_name(){
 void print_on_screen(fakulteter_struct choice[]){
     int i;
 
-    for (i = 0; i <= PRINTSIZE; i++){
+    for (i = 0; i < PRINTSIZE; i++){
         if (choice[i].score != 0){
            printf("%s %.2lf \n", choice[i].navn, choice[i].score);
         }
