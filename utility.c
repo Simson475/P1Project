@@ -34,15 +34,15 @@ void question(fakulteter_struct choices[], weight weights){
 }
 
 int get_input(char custom_output[]){
-    int input, scan_result;
+    int input = 0, scan_result;
     do{
         printf("Hvor glad er du for %s? (1-10)\n", custom_output);
         scan_result = scanf("%d", &input);
-    } while (input < 1 || input > 10);
-    
-    if (scan_result == 0){
-        no_letters();
-    }
+
+        if (scan_result == 0){
+            no_letters();
+        }
+    } while ((input < 1 || input > 10) && (scan_result != 1));
 
     return input;
 }
@@ -168,6 +168,7 @@ void no_letters(){
     while (ch != '\n'){
         scanf("%c", &ch);
     }
-
+    
+    printf("Bogstaver er ikke tilladt! \n");
     return;
 }
