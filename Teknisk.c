@@ -12,7 +12,7 @@ void Decide_Teknisk(char* Name){
     question_amount = load_questions(weights, Teknisk, teknisk_fakultet);
     get_questions(teknisk_fakultet, weights, question_amount);
     sort_by_score(teknisk_fakultet);
-    Result(teknisk_fakultet, "Simon");
+    Result(teknisk_fakultet, Name);
 
     for (i = 0; i <= MAXEDUCATIONS; i++){
         if (teknisk_fakultet[i].score != 0){

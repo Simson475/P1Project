@@ -12,7 +12,7 @@ void Decide_Samfund(char* Name){
     question_amount = load_questions(weights, Samfund, samfund_fakultet);
     get_questions(samfund_fakultet, weights, question_amount);
     sort_by_score(samfund_fakultet);
-    Result(samfund_fakultet, "Simon");
+    Result(samfund_fakultet, Name);
 
     for (i = 0; i <= MAXEDUCATIONS; i++){
         if (samfund_fakultet[i].score != 0){
