@@ -4,19 +4,19 @@
 #include "utility.h"
 #include "Naturvidenskab.h"
 
-void Decide_Nature(char* Name){
-    int question_amount;
-    fakulteter_struct *naturvidenskab_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
+void Decide_nature(char* Name){
+    int Question_amount;
+    fakulteter_struct *Naturvidenskab_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
 
     printf("Besvar foelgende: \n");
-    question_amount = load_questions(weights, Natur, naturvidenskab_fakultet);
-    get_questions(naturvidenskab_fakultet, weights, question_amount);
-    sort_by_score(naturvidenskab_fakultet);
-    Result(naturvidenskab_fakultet, Name);
-    print_on_screen(naturvidenskab_fakultet);
+    Question_amount = load_questions(weights, Natur, Naturvidenskab_fakultet);
+    get_questions(Naturvidenskab_fakultet, weights, Question_amount);
+    sort_by_score(Naturvidenskab_fakultet);
+    Result(Naturvidenskab_fakultet, Name);
+    print_on_screen(Naturvidenskab_fakultet);
         
-    free(naturvidenskab_fakultet);
+    free(Naturvidenskab_fakultet);
     free(weights);
     return;
 }
