@@ -26,3 +26,4 @@ int compare (const void *a, const void *b);
 void Result(fakulteter_struct choice[], char name[]);
 char* Get_users_name();
 void print_on_screen(fakulteter_struct choice[]);
+void no_letters();

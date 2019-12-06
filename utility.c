@@ -34,12 +34,16 @@ void question(fakulteter_struct choices[], weight weights){
 }
 
 int get_input(char custom_output[]){
-    int input;
+    int input = 0, scan_result;
     do{
         printf("Hvor glad er du for %s? (1-10)\n", custom_output);
-        scanf("%d", &input);
-    } while (input < 1 || input > 10);
-    
+        scan_result = scanf("%d", &input);
+
+        if (scan_result == 0){
+            no_letters();
+        }
+    } while ((input < 1 || input > 10) && (scan_result != 1));
+
     return input;
 }
 
@@ -125,14 +129,19 @@ int compare (const void *a, const void *b) {
 }
 
 void Result(fakulteter_struct choice[], char name[]){
-
+    int i=0;
     FILE *File_pointer;
     char file_name[30];
     sprintf(file_name,"%s.txt",name);
     File_pointer = fopen(file_name,"w");
 
-    fprintf(File_pointer,"Navn: %s\n Prioriterede uddannelser:\n1. %s\n2. %s\n3. %s\n4. %s\n5. %s\n",
-                        name,choice[0].navn,choice[1].navn,choice[2].navn,choice[3].navn,choice[4].navn);
+        fprintf(File_pointer,"Navn: %s\nPrioriterede uddannelser:\n",name);
+    while (choice[i].score!=0 && i<5){
+        fprintf(File_pointer,"%d. %s\n",i+1,choice[i].navn);
+        i++;
+    }
+    
+
     fclose(File_pointer);
 
 }
@@ -141,20 +150,44 @@ char* Get_users_name(){
     char* Name = calloc(NAME_SIZE,sizeof(char));
     printf("Indtast navn: \n");
     scanf("%s", Name);
+    printf("---------------------------------------------------\n");
 
     return Name;
 }
 
 void print_on_screen(fakulteter_struct choice[]){
     int i;
-
+    
+    printf("---------------------------------------------------\nDin prioriterede liste:\n");
     for (i = 0; i < PRINTSIZE; i++){
         if (choice[i].score != 0){
-           printf("%s %.2lf \n", choice[i].navn, choice[i].score);
+            if (choice[i].score==choice[i+1].score){
+                if (i==4){
+                    printf("%d. %s, har samme prioritering som %d\n", i+1, choice[i].navn, i+2);
+                    printf("%d. %s\n", i+2, choice[i+1].navn);
+                }
+                else{
+                    printf("%d. %s, har samme prioritering som %d\n", i+1, choice[i].navn, i+2);
+                }
+            }
+            else{
+                printf("%d. %s\n", i+1, choice[i].navn);
+            }
         }
-        else {
+        else{
         }
     }
+    printf("---------------------------------------------------\n");
+
+    return;
+}
+
+void no_letters(){
+    char ch = 0;
+    while (ch != '\n'){
+        scanf("%c", &ch);
+    }
     
+    printf("Bogstaver er ikke tilladt! \n");
     return;
 }

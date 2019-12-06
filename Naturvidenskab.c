@@ -9,6 +9,7 @@ void Decide_Nature(char* Name){
     fakulteter_struct *naturvidenskab_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
 
+    printf("Besvar foelgende: \n");
     question_amount = load_questions(weights, Natur, naturvidenskab_fakultet);
     get_questions(naturvidenskab_fakultet, weights, question_amount);
     sort_by_score(naturvidenskab_fakultet);

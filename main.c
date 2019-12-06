@@ -24,26 +24,29 @@ int main(void){
 
 void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie*/
     int Faculty_Input;
-    printf("\n");
-    printf("Vaelg dit oenskede fakultet:\n");
-    printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknisk\n3 : Samfundsfagligt\n4 : Sundheds\n");
-    scanf("%d",&Faculty_Input);
+    do{
+        printf("\nVaelg dit oenskede fakultet:\n");
+        printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknisk\n3 : Samfundsfagligt\n4 : Sundheds\n");
+        scanf("%d",&Faculty_Input);
+        printf("---------------------------------------------------\n");
 
-    switch (Faculty_Input){
-        case Humaniora: Decide_Humaniora(Name);break;
-        case Natur: Decide_Nature(Name);break;
-        case Teknisk: Decide_Teknisk(Name);break;
-        case Samfund: Decide_Samfund(Name);break;
-        case Sundhed: Decide_Sundhed(Name);break;
-        default:break;
+        switch (Faculty_Input){
+            case Humaniora: Decide_Humaniora(Name);break;
+            case Natur: Decide_Nature(Name);break;
+            case Teknisk: Decide_Teknisk(Name);break;
+            case Samfund: Decide_Samfund(Name);break;
+            case Sundhed: Decide_Sundhed(Name);break;
+            default:break;
+        }
     }
+    while (Faculty_Input < 0 || Faculty_Input > 4);
 
     return;
 
 }
 
 void Info_screen(){
-    printf("Denne test fungere ved at du vil blive spurgt indtil din interesse for forskellige gymnasiefag.\n");
+    printf("Denne test fungere ved at du vil blive spurgt ind til din interesse for forskellige gymnasiefag.\n");
     printf("Du vil blive bedt om at tilkendegive din interesse fra 1-10.\n");
     printf("Paa baggrund af dine interesser foreslaaes et fakultet, som passer til specifikt til dig.\n");
     printf("Du vaelger selv hvilket fakultet du oensker at fortsaette testen med.\n");
