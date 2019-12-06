@@ -4,7 +4,7 @@
 #include "utility.h"
 #include "Sundhed.h"
 
-void Decide_Sundhed(char* Name){
+void Decide_sundhed(char* Name){
     int question_amount;
     fakulteter_struct *sundhed_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
