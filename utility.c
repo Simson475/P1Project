@@ -151,20 +151,28 @@ char* Get_users_name(){
 
 void print_on_screen(fakulteter_struct choice[]){
     int i;
+    
     printf("---------------------------------------------------\nDin prioriterede liste:\n");
     for (i = 0; i < PRINTSIZE; i++){
         if (choice[i].score != 0){
             if (choice[i].score==choice[i+1].score){
-                printf("%d. %s, har samme prioritering som %d\n", i+1, choice[i].navn, i+2);
+                if (i==4){
+                    printf("%d. %s, har samme prioritering som %d\n", i+1, choice[i].navn, i+2);
+                    printf("%d. %s\n", i+2, choice[i+1].navn);
+                }
+                else{
+                    printf("%d. %s, har samme prioritering som %d\n", i+1, choice[i].navn, i+2);
+                }
             }
             else{
                 printf("%d. %s\n", i+1, choice[i].navn);
             }
         }
-        else {
+        else{
         }
     }
     printf("---------------------------------------------------\n");
+
     return;
 }
 
