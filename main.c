@@ -9,7 +9,7 @@
 #include "Teknisk.h"
 #include "fakultet.h"
 
-void Choose_faculty(Name);
+void Choose_faculty(char* Name);
 
 int main(void){
     char* Name = Get_users_name();
