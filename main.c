@@ -30,7 +30,7 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
         scanf("%d", &Faculty_input);
         printf("---------------------------------------------------\n");
 
-        switch (Faculty_Input){
+        switch (Faculty_input){
             case Humaniora: Decide_humaniora(Name);break;
             case Natur: Decide_nature(Name);break;
             case Teknisk: Decide_teknisk(Name);break;
