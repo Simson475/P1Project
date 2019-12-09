@@ -51,7 +51,7 @@ void Info_screen(){
     printf("Paa baggrund af dine interesser foreslaaes et fakultet, som passer til specifikt til dig.\n");
     printf("Du vaelger selv hvilket fakultet du oensker at fortsaette testen med.\n");
     printf("Herfter skal du igen tilkendegive din interesse (1-10) i forskellige emner, indenfor det valgte fakultet\n");
-    printf("Programmet foreslaar 5 studieretninger, som vil passe godt til dig. Listen gemmes også i en tekstfil: 'dit navn'.exe\n");
+    printf("Programmet foreslaar 5 studieretninger, som vil passe godt til dig. Listen gemmes ogsaa i en tekstfil: 'dit navn'.exe\n");
     printf("**Denne test er kun vejledende og boer anvendes i samarbejder med en studievejleder**\n\n");
 
     
