@@ -42,7 +42,7 @@ int Get_input(char Custom_output[]){
         if (Scan_result == 0){
             no_letters();
         }
-    } while ((Input < 1 || Input > 10) && (Scan_result != 1));
+    } while ((Input < 1 || Input > 10) || (Scan_result != 1));
 
     return Input;
 }
