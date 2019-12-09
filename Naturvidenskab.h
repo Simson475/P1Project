@@ -1,1 +1,1 @@
-void Decide_Nature(char* Name);
+void Decide_nature(char* Name);

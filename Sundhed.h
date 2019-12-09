@@ -1,1 +1,1 @@
-void Decide_Sundhed(char* Name);
+void Decide_sundhed(char* Name);

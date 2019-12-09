@@ -1,7 +1,0 @@
-Navn: test
-Prioriterede uddannelser:
-1. International Virksomhedskommunikation i Engelsk
-2. International Virksomhedskommunikation i Tysk
-3. Engelsk
-4. International Virksomhedskommunikation i Spansk
-5. Sprog og internationale studier, engelsk, spansk

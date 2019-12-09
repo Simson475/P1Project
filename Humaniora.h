@@ -1,1 +1,1 @@
-void Decide_Humaniora(char* Name);
+void Decide_humaniora(char* Name);
