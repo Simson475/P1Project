@@ -18,5 +18,6 @@ void Decide_samfund(char* Name){
         
     free(Samfund_fakultet);
     free(weights);
+    free(Name);
     return;
 }

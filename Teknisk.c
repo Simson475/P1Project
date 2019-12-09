@@ -18,5 +18,6 @@ void Decide_teknisk(char* Name){
         
     free(Teknisk_fakultet);
     free(weights);
+    free(Name);
     return;
 }

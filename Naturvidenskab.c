@@ -18,5 +18,6 @@ void Decide_nature(char* Name){
         
     free(Naturvidenskab_fakultet);
     free(weights);
+    free(Name);
     return;
 }
