@@ -18,5 +18,6 @@ void Decide_sundhed(char* Name){
 
     free(sundhed_fakultet);
     free(weights);
+    free(Name);
     return;
 }

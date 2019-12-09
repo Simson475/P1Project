@@ -19,5 +19,6 @@ void Decide_humaniora(char* Name){
         
     free(Human_fakultet);
     free(weights);
+    free(Name);
     return;
 }
