@@ -38,11 +38,11 @@ int get_input(char custom_output[]){
     do{
         printf("Hvor glad er du for %s? (1-10)\n", custom_output);
         scan_result = scanf("%d", &input);
-
+ 
         if (scan_result == 0){
             no_letters();
         }
-    } while ((input < 1 || input > 10) && (scan_result != 1));
+    } while ((input < 1 || input > 10) || scan_result != 1);
 
     return input;
 }
