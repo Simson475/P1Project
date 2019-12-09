@@ -1,7 +1,0 @@
-Navn: jacobv
- Prioriterede uddannelser:
-1. Nanoteknologi
-2. Kemi
-3. Fysik
-4. Bioteknologi
-5. Matematik-oekonomi

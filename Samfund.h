@@ -1,1 +1,1 @@
-void Decide_Samfund(char* Name);
+void Decide_samfund(char* Name);

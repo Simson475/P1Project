@@ -54,22 +54,22 @@ int load_questions(weight Weights[], int Choice, fakulteter_struct Names[]){
 
     switch (Choice){
         case fakultetsvalg:
-            File_pointer = fopen("operator_fakultet_file.csv","r");
+            file_pointer=fopen("Operator_files/operator_fakultet_file.csv","r");
             break;
         case Humaniora:
-            File_pointer = fopen("operator_human_file.csv","r");
+            file_pointer=fopen("Operator_files/operator_human_file.csv","r");
             break;
         case Natur:
-            File_pointer = fopen("operator_natur_file.csv","r");
+            file_pointer=fopen("Operator_files/operator_natur_file.csv","r");
             break;
         case Teknisk:
-            File_pointer = fopen("operator_teknik_file.csv","r");
+            file_pointer=fopen("Operator_files/operator_teknik_file.csv","r");
             break;
         case Samfund:
-            File_pointer = fopen("operator_samfund_file.csv","r");
+            file_pointer=fopen("Operator_files/operator_samfund_file.csv","r");
             break;
         case Sundhed:
-            File_pointer = fopen("operator_sundhed_file.csv","r");
+            file_pointer=fopen("Operator_files/operator_sundhed_file.csv","r");
             break;
         default:
             break;

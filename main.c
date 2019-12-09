@@ -30,13 +30,13 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
         scanf("%d", &Faculty_input);
         printf("---------------------------------------------------\n");
 
-        switch (Faculty_input){
+        switch (Faculty_Input){
             case Humaniora: Decide_humaniora(Name);break;
-            case Natur:     Decide_nature(Name);   break;
-            case Teknisk:   Decide_teknisk(Name);  break;
-            case Samfund:   Decide_samfund(Name);  break;
-            case Sundhed:   Decide_sundhed(Name);  break;
-            default: break;
+            case Natur: Decide_nature(Name);break;
+            case Teknisk: Decide_teknisk(Name);break;
+            case Samfund: Decide_samfund(Name);break;
+            case Sundhed: Decide_sundhed(Name);break;
+            default:break;
         }
     }
     while (Faculty_input < 0 || Faculty_input > 4);
