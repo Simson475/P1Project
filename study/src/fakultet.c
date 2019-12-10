@@ -8,6 +8,8 @@ void Decide_faculty(){
     int question_amount;
     fakulteter_struct *fakultet = calloc(MAXEDUCATIONS,sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS,sizeof(weight));
+    is_allocated(fakultet);
+    is_allocated(weights);
 
     printf("Besvar foelgende: \n");
     question_amount = load_questions(weights, fakultetsvalg, fakultet);

@@ -9,6 +9,8 @@ void Decide_humaniora(char* Name){
     int Question_amount;
     fakulteter_struct *Human_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
+    is_allocated(Human_fakultet);
+    is_allocated(weights);
 
     printf("Besvar foelgende: \n");
     Question_amount = load_questions(weights, Humaniora, Human_fakultet);
