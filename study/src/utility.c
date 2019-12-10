@@ -184,7 +184,7 @@ void print_on_screen(fakulteter_struct Choice[]){
 
 void no_letters(){
     char ch = 0;
-    
+
     while (ch != '\n'){
         scanf("%c", &ch);
     }
@@ -200,6 +200,5 @@ void is_allocated(void *calloc_pointer){
     }
     else{
         return;
-    }
-    
+    }    
 }
