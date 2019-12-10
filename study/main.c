@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "utility.h"
-#include "Naturvidenskab.h"
-#include "Humaniora.h"
-#include "Samfund.h"
-#include "Sundhed.h"
-#include "Teknisk.h"
-#include "fakultet.h"
+#include "src/utility.h"
+#include "src/Naturvidenskab.h"
+#include "src/Humaniora.h"
+#include "src/Samfund.h"
+#include "src/Sundhed.h"
+#include "src/Teknisk.h"
+#include "src/fakultet.h"
 
 void Choose_faculty(char* Name);
 void Info_screen();
