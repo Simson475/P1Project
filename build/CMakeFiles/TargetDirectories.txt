@@ -1,0 +1,8 @@
+/home/simon/programming/P1Project/build/CMakeFiles/rebuild_cache.dir
+/home/simon/programming/P1Project/build/CMakeFiles/edit_cache.dir
+/home/simon/programming/P1Project/build/study/src/CMakeFiles/rebuild_cache.dir
+/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir
+/home/simon/programming/P1Project/build/study/src/CMakeFiles/edit_cache.dir
+/home/simon/programming/P1Project/build/study/CMakeFiles/rebuild_cache.dir
+/home/simon/programming/P1Project/build/study/CMakeFiles/Studievalg.dir
+/home/simon/programming/P1Project/build/study/CMakeFiles/edit_cache.dir

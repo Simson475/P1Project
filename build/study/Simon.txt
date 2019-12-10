@@ -1,0 +1,7 @@
+Navn: Simon
+Prioriterede uddannelser:
+1. Nanoteknologi
+2. Kemi
+3. Bioteknologi
+4. Fysik
+5. Matematik-oekonomi

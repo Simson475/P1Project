@@ -1,0 +1,1 @@
+/usr/bin/c89-gcc -g   CMakeFiles/Study.exe.dir/main.c.o  -o Study.exe src/libsource.a 
