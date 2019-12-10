@@ -8,6 +8,8 @@ void Decide_nature(char* Name){
     int Question_amount;
     fakulteter_struct *Naturvidenskab_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
+    is_allocated(Naturvidenskab_fakultet);
+    is_allocated(weights);
 
     printf("Besvar foelgende: \n");
     Question_amount = load_questions(weights, Natur, Naturvidenskab_fakultet);
