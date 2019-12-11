@@ -158,7 +158,7 @@ char* Get_users_name(){
 void print_on_screen(fakulteter_struct Choice[]){
     int i;
     
-    printf("---------------------------------------------------\nDin prioriterede liste:\n");
+    printf("\n---------------------------------------------------\nDin prioriterede liste:\n");
     for (i = 0; i < PRINTSIZE; i++){
         if (Choice[i].score != 0){
             if (Choice[i].score==Choice[i+1].score){
