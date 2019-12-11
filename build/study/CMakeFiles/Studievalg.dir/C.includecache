@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/simon/programming/P1Project/study/main.c
+/home/jacob/Desktop/P1Project/study/main.c
 stdio.h
 -
 stdlib.h
@@ -14,31 +14,31 @@ stdlib.h
 string.h
 -
 src/utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 src/Naturvidenskab.h
-/home/simon/programming/P1Project/study/src/Naturvidenskab.h
+/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
 src/Humaniora.h
-/home/simon/programming/P1Project/study/src/Humaniora.h
+/home/jacob/Desktop/P1Project/study/src/Humaniora.h
 src/Samfund.h
-/home/simon/programming/P1Project/study/src/Samfund.h
+/home/jacob/Desktop/P1Project/study/src/Samfund.h
 src/Sundhed.h
-/home/simon/programming/P1Project/study/src/Sundhed.h
+/home/jacob/Desktop/P1Project/study/src/Sundhed.h
 src/Teknisk.h
-/home/simon/programming/P1Project/study/src/Teknisk.h
+/home/jacob/Desktop/P1Project/study/src/Teknisk.h
 src/fakultet.h
-/home/simon/programming/P1Project/study/src/fakultet.h
+/home/jacob/Desktop/P1Project/study/src/fakultet.h
 
-/home/simon/programming/P1Project/study/src/Humaniora.h
+/home/jacob/Desktop/P1Project/study/src/Humaniora.h
 
-/home/simon/programming/P1Project/study/src/Naturvidenskab.h
+/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
 
-/home/simon/programming/P1Project/study/src/Samfund.h
+/home/jacob/Desktop/P1Project/study/src/Samfund.h
 
-/home/simon/programming/P1Project/study/src/Sundhed.h
+/home/jacob/Desktop/P1Project/study/src/Sundhed.h
 
-/home/simon/programming/P1Project/study/src/Teknisk.h
+/home/jacob/Desktop/P1Project/study/src/Teknisk.h
 
-/home/simon/programming/P1Project/study/src/fakultet.h
+/home/jacob/Desktop/P1Project/study/src/fakultet.h
 
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 

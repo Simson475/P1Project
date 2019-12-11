@@ -1,4 +1,4 @@
-# Install script for directory: /home/simon/programming/P1Project
+# Install script for directory: /home/jacob/Desktop/P1Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/simon/programming/P1Project/build/study/src/cmake_install.cmake")
-  include("/home/simon/programming/P1Project/build/study/cmake_install.cmake")
+  include("/home/jacob/Desktop/P1Project/build/study/src/cmake_install.cmake")
+  include("/home/jacob/Desktop/P1Project/build/study/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/simon/programming/P1Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jacob/Desktop/P1Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simon/programming/P1Project
+CMAKE_SOURCE_DIR = /home/jacob/Desktop/P1Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simon/programming/P1Project/build
+CMAKE_BINARY_DIR = /home/jacob/Desktop/P1Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/simon/programming/P1Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/simon/programming/P1Project/build/CMakeFiles /home/simon/programming/P1Project/build/study/src/CMakeFiles/progress.marks
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/programming/P1Project/build/CMakeFiles 0
+	cd /home/jacob/Desktop/P1Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Desktop/P1Project/build/CMakeFiles /home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/progress.marks
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Desktop/P1Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/clean
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/preinstall
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/preinstall
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/simon/programming/P1Project/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jacob/Desktop/P1Project/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 study/src/CMakeFiles/source.dir/rule:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/CMakeFiles/source.dir/rule
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f CMakeFiles/Makefile2 study/src/CMakeFiles/source.dir/rule
 .PHONY : study/src/CMakeFiles/source.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ source: study/src/CMakeFiles/source.dir/rule
 
 # fast build rule for target.
 source/fast:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/build
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/build
 .PHONY : source/fast
 
 Humaniora.o: Humaniora.c.o
@@ -131,7 +131,7 @@ Humaniora.o: Humaniora.c.o
 
 # target to build an object file
 Humaniora.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Humaniora.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Humaniora.c.o
 .PHONY : Humaniora.c.o
 
 Humaniora.i: Humaniora.c.i
@@ -140,7 +140,7 @@ Humaniora.i: Humaniora.c.i
 
 # target to preprocess a source file
 Humaniora.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Humaniora.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Humaniora.c.i
 .PHONY : Humaniora.c.i
 
 Humaniora.s: Humaniora.c.s
@@ -149,7 +149,7 @@ Humaniora.s: Humaniora.c.s
 
 # target to generate assembly for a file
 Humaniora.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Humaniora.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Humaniora.c.s
 .PHONY : Humaniora.c.s
 
 Naturvidenskab.o: Naturvidenskab.c.o
@@ -158,7 +158,7 @@ Naturvidenskab.o: Naturvidenskab.c.o
 
 # target to build an object file
 Naturvidenskab.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Naturvidenskab.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Naturvidenskab.c.o
 .PHONY : Naturvidenskab.c.o
 
 Naturvidenskab.i: Naturvidenskab.c.i
@@ -167,7 +167,7 @@ Naturvidenskab.i: Naturvidenskab.c.i
 
 # target to preprocess a source file
 Naturvidenskab.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Naturvidenskab.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Naturvidenskab.c.i
 .PHONY : Naturvidenskab.c.i
 
 Naturvidenskab.s: Naturvidenskab.c.s
@@ -176,7 +176,7 @@ Naturvidenskab.s: Naturvidenskab.c.s
 
 # target to generate assembly for a file
 Naturvidenskab.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Naturvidenskab.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Naturvidenskab.c.s
 .PHONY : Naturvidenskab.c.s
 
 Samfund.o: Samfund.c.o
@@ -185,7 +185,7 @@ Samfund.o: Samfund.c.o
 
 # target to build an object file
 Samfund.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Samfund.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Samfund.c.o
 .PHONY : Samfund.c.o
 
 Samfund.i: Samfund.c.i
@@ -194,7 +194,7 @@ Samfund.i: Samfund.c.i
 
 # target to preprocess a source file
 Samfund.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Samfund.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Samfund.c.i
 .PHONY : Samfund.c.i
 
 Samfund.s: Samfund.c.s
@@ -203,7 +203,7 @@ Samfund.s: Samfund.c.s
 
 # target to generate assembly for a file
 Samfund.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Samfund.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Samfund.c.s
 .PHONY : Samfund.c.s
 
 Sundhed.o: Sundhed.c.o
@@ -212,7 +212,7 @@ Sundhed.o: Sundhed.c.o
 
 # target to build an object file
 Sundhed.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Sundhed.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Sundhed.c.o
 .PHONY : Sundhed.c.o
 
 Sundhed.i: Sundhed.c.i
@@ -221,7 +221,7 @@ Sundhed.i: Sundhed.c.i
 
 # target to preprocess a source file
 Sundhed.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Sundhed.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Sundhed.c.i
 .PHONY : Sundhed.c.i
 
 Sundhed.s: Sundhed.c.s
@@ -230,7 +230,7 @@ Sundhed.s: Sundhed.c.s
 
 # target to generate assembly for a file
 Sundhed.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Sundhed.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Sundhed.c.s
 .PHONY : Sundhed.c.s
 
 Teknisk.o: Teknisk.c.o
@@ -239,7 +239,7 @@ Teknisk.o: Teknisk.c.o
 
 # target to build an object file
 Teknisk.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Teknisk.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Teknisk.c.o
 .PHONY : Teknisk.c.o
 
 Teknisk.i: Teknisk.c.i
@@ -248,7 +248,7 @@ Teknisk.i: Teknisk.c.i
 
 # target to preprocess a source file
 Teknisk.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Teknisk.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Teknisk.c.i
 .PHONY : Teknisk.c.i
 
 Teknisk.s: Teknisk.c.s
@@ -257,7 +257,7 @@ Teknisk.s: Teknisk.c.s
 
 # target to generate assembly for a file
 Teknisk.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Teknisk.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/Teknisk.c.s
 .PHONY : Teknisk.c.s
 
 fakultet.o: fakultet.c.o
@@ -266,7 +266,7 @@ fakultet.o: fakultet.c.o
 
 # target to build an object file
 fakultet.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/fakultet.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/fakultet.c.o
 .PHONY : fakultet.c.o
 
 fakultet.i: fakultet.c.i
@@ -275,7 +275,7 @@ fakultet.i: fakultet.c.i
 
 # target to preprocess a source file
 fakultet.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/fakultet.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/fakultet.c.i
 .PHONY : fakultet.c.i
 
 fakultet.s: fakultet.c.s
@@ -284,7 +284,7 @@ fakultet.s: fakultet.c.s
 
 # target to generate assembly for a file
 fakultet.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/fakultet.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/fakultet.c.s
 .PHONY : fakultet.c.s
 
 utility.o: utility.c.o
@@ -293,7 +293,7 @@ utility.o: utility.c.o
 
 # target to build an object file
 utility.c.o:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/utility.c.o
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/utility.c.o
 .PHONY : utility.c.o
 
 utility.i: utility.c.i
@@ -302,7 +302,7 @@ utility.i: utility.c.i
 
 # target to preprocess a source file
 utility.c.i:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/utility.c.i
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/utility.c.i
 .PHONY : utility.c.i
 
 utility.s: utility.c.s
@@ -311,7 +311,7 @@ utility.s: utility.c.s
 
 # target to generate assembly for a file
 utility.c.s:
-	cd /home/simon/programming/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/utility.c.s
+	cd /home/jacob/Desktop/P1Project/build && $(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/utility.c.s
 .PHONY : utility.c.s
 
 # Help Target
@@ -355,6 +355,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/simon/programming/P1Project/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jacob/Desktop/P1Project/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

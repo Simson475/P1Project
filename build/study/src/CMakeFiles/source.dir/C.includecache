@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/simon/programming/P1Project/study/src/Humaniora.c
+/home/jacob/Desktop/P1Project/study/src/Humaniora.c
 stdio.h
 -
 stdlib.h
@@ -14,13 +14,13 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 Humaniora.h
-/home/simon/programming/P1Project/study/src/Humaniora.h
+/home/jacob/Desktop/P1Project/study/src/Humaniora.h
 
-/home/simon/programming/P1Project/study/src/Humaniora.h
+/home/jacob/Desktop/P1Project/study/src/Humaniora.h
 
-/home/simon/programming/P1Project/study/src/Naturvidenskab.c
+/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.c
 stdio.h
 -
 stdlib.h
@@ -28,13 +28,13 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 Naturvidenskab.h
-/home/simon/programming/P1Project/study/src/Naturvidenskab.h
+/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
 
-/home/simon/programming/P1Project/study/src/Naturvidenskab.h
+/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
 
-/home/simon/programming/P1Project/study/src/Samfund.c
+/home/jacob/Desktop/P1Project/study/src/Samfund.c
 stdio.h
 -
 stdlib.h
@@ -42,13 +42,13 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 Samfund.h
-/home/simon/programming/P1Project/study/src/Samfund.h
+/home/jacob/Desktop/P1Project/study/src/Samfund.h
 
-/home/simon/programming/P1Project/study/src/Samfund.h
+/home/jacob/Desktop/P1Project/study/src/Samfund.h
 
-/home/simon/programming/P1Project/study/src/Sundhed.c
+/home/jacob/Desktop/P1Project/study/src/Sundhed.c
 stdio.h
 -
 stdlib.h
@@ -56,13 +56,13 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 Sundhed.h
-/home/simon/programming/P1Project/study/src/Sundhed.h
+/home/jacob/Desktop/P1Project/study/src/Sundhed.h
 
-/home/simon/programming/P1Project/study/src/Sundhed.h
+/home/jacob/Desktop/P1Project/study/src/Sundhed.h
 
-/home/simon/programming/P1Project/study/src/Teknisk.c
+/home/jacob/Desktop/P1Project/study/src/Teknisk.c
 stdio.h
 -
 stdlib.h
@@ -70,13 +70,13 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 Teknisk.h
-/home/simon/programming/P1Project/study/src/Teknisk.h
+/home/jacob/Desktop/P1Project/study/src/Teknisk.h
 
-/home/simon/programming/P1Project/study/src/Teknisk.h
+/home/jacob/Desktop/P1Project/study/src/Teknisk.h
 
-/home/simon/programming/P1Project/study/src/fakultet.c
+/home/jacob/Desktop/P1Project/study/src/fakultet.c
 stdio.h
 -
 stdlib.h
@@ -84,13 +84,13 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 fakultet.h
-/home/simon/programming/P1Project/study/src/fakultet.h
+/home/jacob/Desktop/P1Project/study/src/fakultet.h
 
-/home/simon/programming/P1Project/study/src/fakultet.h
+/home/jacob/Desktop/P1Project/study/src/fakultet.h
 
-/home/simon/programming/P1Project/study/src/utility.c
+/home/jacob/Desktop/P1Project/study/src/utility.c
 stdio.h
 -
 stdlib.h
@@ -98,7 +98,7 @@ stdlib.h
 string.h
 -
 utility.h
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 
-/home/simon/programming/P1Project/study/src/utility.h
+/home/jacob/Desktop/P1Project/study/src/utility.h
 

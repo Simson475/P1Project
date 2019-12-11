@@ -16,7 +16,6 @@ void Decide_faculty(){
     get_questions(fakultet, weights,question_amount);
     sort_by_score(fakultet);
 
-    printf("\n");
     print_on_screen(fakultet);
 
     free(fakultet);
