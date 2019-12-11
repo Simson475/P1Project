@@ -27,14 +27,14 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
     int Faculty_input, scan_result;
     do{
         printf("\nVaelg dit oenskede fakultet:\n");
-        printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknik\n3 : Samfundsfag\n4 : Sundhed\n");
+        printf("1 : Humaniora\n2 : Naturvidenskab\n3 : Teknik\n4 : Samfundsfag\n5 : Sundhed\n");
         scan_result=scanf("%d", &Faculty_input);
         printf("---------------------------------------------------\n");
         if(scan_result==0){
             no_letters();
         }
         else{
-            switch (Faculty_input){
+            switch (Faculty_input-1){
                 case Humaniora: Decide_humaniora(Name);break;
                 case Natur: Decide_nature(Name);break;
                 case Teknisk: Decide_teknisk(Name);break;
@@ -44,7 +44,7 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
             }
         }
     }
-    while (Faculty_input < 0 || Faculty_input > 4);
+    while (Faculty_input < 1 || Faculty_input > 5);
 
     return;
 
