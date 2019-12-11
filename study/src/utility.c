@@ -184,10 +184,21 @@ void print_on_screen(fakulteter_struct Choice[]){
 
 void no_letters(){
     char ch = 0;
+
     while (ch != '\n'){
         scanf("%c", &ch);
     }
     
     printf("Bogstaver er ikke tilladt! \n");
     return;
+}
+
+void is_allocated(void *calloc_pointer){
+    if (calloc_pointer==NULL){
+        printf("MEMORY ER IKKE ALLOKERET. LUKKER PROGRAMMET");
+        exit(EXIT_FAILURE);
+    }
+    else{
+        return;
+    }    
 }
