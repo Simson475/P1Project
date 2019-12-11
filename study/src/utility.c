@@ -133,7 +133,7 @@ void Result(fakulteter_struct Choice[], char name[]){
     FILE *File_pointer;
     char File_name[30];
     sprintf(File_name,"%s.txt",name);
-    File_pointer = fopen(File_name,"w");
+    File_pointer = fopen(File_name,"w"); 
 
         fprintf(File_pointer,"Navn: %s\nPrioriterede uddannelser:\n",name);
     while (Choice[i].score!=0 && i<5){
@@ -182,17 +182,19 @@ void print_on_screen(fakulteter_struct Choice[]){
     return;
 }
 
+/*tager imod bogstaver og fjerner dem*/
 void no_letters(){
     char ch = 0;
 
     while (ch != '\n'){
         scanf("%c", &ch);
     }
-    
+     
     printf("Bogstaver er ikke tilladt! \n");
     return;
 }
 
+/*tjekker om data er allokeret*/
 void is_allocated(void *calloc_pointer){
     if (calloc_pointer==NULL){
         printf("MEMORY ER IKKE ALLOKERET. LUKKER PROGRAMMET");

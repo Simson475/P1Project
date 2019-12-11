@@ -1,1 +1,1 @@
-/usr/bin/c89-gcc -g   CMakeFiles/Studievalg.dir/main.c.o  -o Studievalg src/libsource.a 
+/usr/bin/c89-gcc -g   CMakeFiles/Studievalg.dir/main.c.o  -o ../../Studievalg src/libsource.a 
