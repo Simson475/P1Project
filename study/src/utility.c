@@ -149,7 +149,7 @@ void Result(fakulteter_struct Choice[], char name[]){
 char* Get_users_name(){
     char* Name = calloc(NAME_SIZE,sizeof(char));
     printf("Indtast navn: \n");
-    scanf("%s", Name);
+    scanf("%[^\n]", Name);
     printf("---------------------------------------------------\n");
 
     return Name;
