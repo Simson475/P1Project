@@ -19,28 +19,28 @@ int main(void){
     Decide_faculty();
     Choose_faculty(Name);
     printf("skriv input for at lukke programmet\n");
-    scanf("%[\n]",Name);
+    scanf("%[\n]", Name);
 	return 0; 
 }
 
 void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie*/
-    int Faculty_input, scan_result;
+    int Faculty_input, Scan_result;
     do{
         printf("\nVaelg dit oenskede fakultet:\n");
         printf("1 : Humaniora\n2 : Naturvidenskab\n3 : Teknik\n4 : Samfundsfag\n5 : Sundhed\n");
-        scan_result=scanf("%d", &Faculty_input);
+        Scan_result = scanf("%d", &Faculty_input);
         printf("---------------------------------------------------\n");
-        if(scan_result==0){
-            no_letters();
+        if(Scan_result == 0){
+            No_letters();
         }
         else{
-            switch (Faculty_input-1){
+            switch (Faculty_input - 1){
                 case Humaniora: Decide_humaniora(Name);break;
-                case Natur: Decide_nature(Name);break;
-                case Teknisk: Decide_teknisk(Name);break;
-                case Samfund: Decide_samfund(Name);break;
-                case Sundhed: Decide_sundhed(Name);break;
-                default:break;
+                case Natur:     Decide_nature(Name);   break;
+                case Teknisk:   Decide_teknisk(Name);  break;
+                case Samfund:   Decide_samfund(Name);  break;
+                case Sundhed:   Decide_sundhed(Name);  break;
+                default: break;
             }
         }
     }
@@ -59,6 +59,6 @@ void Info_screen(){
     printf("Programmet foreslaar 5 studieretninger, som vil passe godt til dig. Listen gemmes automatisk i en tekstfil: 'dit navn'.exe\n");
     printf("**Denne test er kun vejledende og boer anvendes i samarbejder med en studievejleder**\n\n");
 
-    
+    return;
 }
 

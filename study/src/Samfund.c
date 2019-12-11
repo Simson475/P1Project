@@ -8,15 +8,15 @@ void Decide_samfund(char* Name){
     int Question_amount;
     fakulteter_struct *Samfund_fakultet = calloc(MAXEDUCATIONS, sizeof(fakulteter_struct));
     weight *weights = calloc(MAXEDUCATIONS, sizeof(weight));
-    is_allocated(Samfund_fakultet);
-    is_allocated(weights);
+    Is_allocated(Samfund_fakultet);
+    Is_allocated(weights);
 
     printf("Besvar foelgende: \n");
-    Question_amount = load_questions(weights, Samfund, Samfund_fakultet);
-    get_questions(Samfund_fakultet, weights, Question_amount);
-    sort_by_score(Samfund_fakultet);
+    Question_amount = Load_questions(weights, Samfund, Samfund_fakultet);
+    Get_questions(Samfund_fakultet, weights, Question_amount);
+    Sort_by_score(Samfund_fakultet);
     Result(Samfund_fakultet, Name);
-    print_on_screen(Samfund_fakultet);
+    Print_on_screen(Samfund_fakultet);
         
     free(Samfund_fakultet);
     free(weights);
