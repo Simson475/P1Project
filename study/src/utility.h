@@ -17,14 +17,14 @@ typedef struct fakulteter_struct{
 
 enum Fakulteter {Humaniora, Natur, Teknisk, Samfund, Sundhed, fakultetsvalg};
 
-int load_questions(weight weights[], int choice, fakulteter_struct names[]);
-void get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount);
-void question(fakulteter_struct fakultet[], weight weights);
+int Load_questions(weight weights[], int choice, fakulteter_struct names[]);
+void Get_questions(fakulteter_struct fakultet[], weight weights[], int question_amount);
+void Question(fakulteter_struct fakultet[], weight weights);
 int Get_input(char custom_output[]);
-void sort_by_score (fakulteter_struct choice[]);
-int compare (const void *a, const void *b);
+void Sort_by_score (fakulteter_struct choice[]);
+int Compare (const void *a, const void *b);
 void Result(fakulteter_struct choice[], char name[]);
 char* Get_users_name();
-void print_on_screen(fakulteter_struct choice[]);
-void no_letters();
-void is_allocated(void *calloc_pointer);
+void Print_on_screen(fakulteter_struct choice[]);
+void No_letters();
+void Is_allocated(void *calloc_pointer);
