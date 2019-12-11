@@ -132,7 +132,7 @@ void Result(fakulteter_struct Choice[], char name[]){
     int i=0;
     FILE *File_pointer;
     char File_name[30];
-    sprintf(File_name,"../../%s.txt",name);
+    sprintf(File_name,"%s.txt",name);
     File_pointer = fopen(File_name,"w"); 
 
         fprintf(File_pointer,"Navn: %s\nPrioriterede uddannelser:\n",name);
@@ -182,6 +182,7 @@ void print_on_screen(fakulteter_struct Choice[]){
     return;
 }
 
+/*tager imod bogstaver og fjerner dem*/
 void no_letters(){
     char ch = 0;
 
@@ -193,6 +194,7 @@ void no_letters(){
     return;
 }
 
+/*tjekker om data er allokeret*/
 void is_allocated(void *calloc_pointer){
     if (calloc_pointer==NULL){
         printf("MEMORY ER IKKE ALLOKERET. LUKKER PROGRAMMET");
