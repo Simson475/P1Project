@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Studievalg.dir/main.c.o"
-  "Studievalg.pdb"
-  "Studievalg"
+  "../../Studievalg.pdb"
+  "../../Studievalg"
 )
 
 # Per-language clean rules from dependency scanning.
