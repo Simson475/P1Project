@@ -132,8 +132,8 @@ void Result(fakulteter_struct Choice[], char name[]){
     int i=0;
     FILE *File_pointer;
     char File_name[30];
-    sprintf(File_name,"%s.txt",name);
-    File_pointer = fopen(File_name,"w");
+    sprintf(File_name,"../../%s.txt",name);
+    File_pointer = fopen(File_name,"w"); 
 
         fprintf(File_pointer,"Navn: %s\nPrioriterede uddannelser:\n",name);
     while (Choice[i].score!=0 && i<5){
@@ -188,7 +188,7 @@ void no_letters(){
     while (ch != '\n'){
         scanf("%c", &ch);
     }
-    
+     
     printf("Bogstaver er ikke tilladt! \n");
     return;
 }
