@@ -3,7 +3,7 @@
 #include <string.h>
 #include "Utility.h"
 
-
+/*stiller en række spørgsmål til brugeren*/
 void Get_questions(Faculty_struct Choices[], Weight Weights[], int Question_amount){
     int i = 0;
 
@@ -14,6 +14,7 @@ void Get_questions(Faculty_struct Choices[], Weight Weights[], int Question_amou
     return;
 }
 
+/*stiller de enkelte soørgsmål og giver score derefter*/
 void Question(Faculty_struct Choices[], Weight Weights){
     int Input = Get_input(Weights.Custom_output);
     
@@ -33,6 +34,7 @@ void Question(Faculty_struct Choices[], Weight Weights){
     return;
 }
 
+/*stiller spørgsmål til brugeren, og beder om input*/
 int Get_input(char Custom_output[]){
     int Input = 0, Scan_result;
     do{
@@ -47,6 +49,7 @@ int Get_input(char Custom_output[]){
     return Input;
 }
 
+/*loader spørgsmål fra csv filer*/
 int Load_questions(Weight Weights[], int Choice, Faculty_struct Names[]){
     int i = 0;
     FILE *File_pointer;
@@ -114,6 +117,7 @@ int Load_questions(Weight Weights[], int Choice, Faculty_struct Names[]){
     return i - 1;
 }
 
+/*sorterer efter score*/
 void Sort_by_score (Faculty_struct Choice[]) {
     
     qsort(Choice, MAXEDUCATIONS, sizeof(struct Faculty_struct), Compare);
@@ -121,6 +125,7 @@ void Sort_by_score (Faculty_struct Choice[]) {
     return;
 }
 
+/*sammenligningsfunktion til qsort*/
 int Compare (const void *a, const void *b) {
     struct Faculty_struct *ia = (struct Faculty_struct *)a;
     struct Faculty_struct *ib = (struct Faculty_struct *)b;
@@ -128,6 +133,7 @@ int Compare (const void *a, const void *b) {
     return (ib -> Score - ia -> Score);
 }
 
+/*ligger den prioriterede liste over fakulteter i en fil navngivet efter brugeren*/
 void Result(Faculty_struct Choice[], char name[]){
     int i = 0;
     FILE *File_pointer;
@@ -146,6 +152,7 @@ void Result(Faculty_struct Choice[], char name[]){
     return;
 }
 
+/*Tager imod brugerens navn*/
 char* Get_users_name(){
     char* Name = calloc(NAME_SIZE,sizeof(char));
     printf("Indtast Name: \n");
@@ -155,6 +162,7 @@ char* Get_users_name(){
     return Name;
 }
 
+/*Printer prioriteret liste til brugeren på skærmen*/
 void Print_on_screen(Faculty_struct Choice[]){
     int i;
     
