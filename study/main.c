@@ -20,7 +20,8 @@ int main(void){
 	return 0; 
 }
 
-void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie*/
+/*Funktion hvor brugeren vælger ønsket studie*/
+void Choose_faculty(char* Name){ 
     int Faculty_input, Scan_result;
     do{
         printf("\nVaelg dit oenskede fakultet:\n");
