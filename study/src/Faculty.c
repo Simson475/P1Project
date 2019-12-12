@@ -4,6 +4,7 @@
 #include "Utility.h"
 #include "Faculty.h"
 
+/*hovedfunktion for prioritering af fakulteter*/
 void Decide_faculty(){
     int question_amount;
     Faculty_struct *fakultet = calloc(MAXEDUCATIONS,sizeof(Faculty_struct));

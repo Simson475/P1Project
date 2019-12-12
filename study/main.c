@@ -41,6 +41,7 @@ void Choose_faculty(char* Name){
 
 }
 
+/*Printer info til brugeren før start af test*/
 void Info_screen(){
     printf("Denne test fungerer ved at du vil blive spurgt ind til din interesse for forskellige gymnasiefag.\n");
     printf("Du vil blive bedt om at tilkendegive din interesse fra 1-10.\n");
