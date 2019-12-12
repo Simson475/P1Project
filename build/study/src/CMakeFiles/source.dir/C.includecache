@@ -6,99 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/jacob/Desktop/P1Project/study/src/Humaniora.c
+/home/jacob/Desktop/P1Project/study/src/Faculty.c
 stdio.h
 -
 stdlib.h
 -
 string.h
 -
-utility.h
-/home/jacob/Desktop/P1Project/study/src/utility.h
-Humaniora.h
-/home/jacob/Desktop/P1Project/study/src/Humaniora.h
+Utility.h
+/home/jacob/Desktop/P1Project/study/src/Utility.h
+Faculty.h
+/home/jacob/Desktop/P1Project/study/src/Faculty.h
 
-/home/jacob/Desktop/P1Project/study/src/Humaniora.h
+/home/jacob/Desktop/P1Project/study/src/Faculty.h
 
-/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.c
+/home/jacob/Desktop/P1Project/study/src/Study.c
+>>>>>>> Stashed changes
 stdio.h
 -
 stdlib.h
 -
 string.h
 -
+<<<<<<< Updated upstream
 utility.h
 /home/jacob/Desktop/P1Project/study/src/utility.h
 Naturvidenskab.h
 /home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
 
-/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
-
-/home/jacob/Desktop/P1Project/study/src/Samfund.c
+/home/jacob/Desktop/P1Project/study/src/Utility.c
 stdio.h
 -
 stdlib.h
 -
 string.h
 -
-utility.h
-/home/jacob/Desktop/P1Project/study/src/utility.h
-Samfund.h
-/home/jacob/Desktop/P1Project/study/src/Samfund.h
+Utility.h
+/home/jacob/Desktop/P1Project/study/src/Utility.h
 
-/home/jacob/Desktop/P1Project/study/src/Samfund.h
-
-/home/jacob/Desktop/P1Project/study/src/Sundhed.c
-stdio.h
+/home/jacob/Desktop/P1Project/study/src/Utility.h
+>>>>>>> Stashed changes
 -
-stdlib.h
--
-string.h
--
-utility.h
-/home/jacob/Desktop/P1Project/study/src/utility.h
-Sundhed.h
-/home/jacob/Desktop/P1Project/study/src/Sundhed.h
-
-/home/jacob/Desktop/P1Project/study/src/Sundhed.h
-
-/home/jacob/Desktop/P1Project/study/src/Teknisk.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-utility.h
-/home/jacob/Desktop/P1Project/study/src/utility.h
-Teknisk.h
-/home/jacob/Desktop/P1Project/study/src/Teknisk.h
-
-/home/jacob/Desktop/P1Project/study/src/Teknisk.h
-
-/home/jacob/Desktop/P1Project/study/src/fakultet.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-utility.h
-/home/jacob/Desktop/P1Project/study/src/utility.h
-fakultet.h
-/home/jacob/Desktop/P1Project/study/src/fakultet.h
-
-/home/jacob/Desktop/P1Project/study/src/fakultet.h
-
-/home/jacob/Desktop/P1Project/study/src/utility.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-utility.h
-/home/jacob/Desktop/P1Project/study/src/utility.h
-
-/home/jacob/Desktop/P1Project/study/src/utility.h
 

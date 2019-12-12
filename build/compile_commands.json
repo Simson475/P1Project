@@ -1,38 +1,18 @@
 [
 {
   "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/fakultet.c.o   -c /home/jacob/Desktop/P1Project/study/src/fakultet.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/fakultet.c"
+  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Faculty.c.o   -c /home/jacob/Desktop/P1Project/study/src/Faculty.c",
+  "file": "/home/jacob/Desktop/P1Project/study/src/Faculty.c"
 },
 {
   "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Humaniora.c.o   -c /home/jacob/Desktop/P1Project/study/src/Humaniora.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/Humaniora.c"
+  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Study.c.o   -c /home/jacob/Desktop/P1Project/study/src/Study.c",
+  "file": "/home/jacob/Desktop/P1Project/study/src/Study.c"
 },
 {
   "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Naturvidenskab.c.o   -c /home/jacob/Desktop/P1Project/study/src/Naturvidenskab.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/Naturvidenskab.c"
-},
-{
-  "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Samfund.c.o   -c /home/jacob/Desktop/P1Project/study/src/Samfund.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/Samfund.c"
-},
-{
-  "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Sundhed.c.o   -c /home/jacob/Desktop/P1Project/study/src/Sundhed.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/Sundhed.c"
-},
-{
-  "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Teknisk.c.o   -c /home/jacob/Desktop/P1Project/study/src/Teknisk.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/Teknisk.c"
-},
-{
-  "directory": "/home/jacob/Desktop/P1Project/build/study/src",
-  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/utility.c.o   -c /home/jacob/Desktop/P1Project/study/src/utility.c",
-  "file": "/home/jacob/Desktop/P1Project/study/src/utility.c"
+  "command": "/usr/bin/c89-gcc  -I/home/jacob/Desktop/P1Project/study/src/study/src  -g   -o CMakeFiles/source.dir/Utility.c.o   -c /home/jacob/Desktop/P1Project/study/src/Utility.c",
+  "file": "/home/jacob/Desktop/P1Project/study/src/Utility.c"
 },
 {
   "directory": "/home/jacob/Desktop/P1Project/build/study",

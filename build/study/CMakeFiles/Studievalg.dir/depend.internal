@@ -3,10 +3,6 @@
 
 study/CMakeFiles/Studievalg.dir/main.c.o
  /home/jacob/Desktop/P1Project/study/main.c
- /home/jacob/Desktop/P1Project/study/src/Humaniora.h
- /home/jacob/Desktop/P1Project/study/src/Naturvidenskab.h
- /home/jacob/Desktop/P1Project/study/src/Samfund.h
- /home/jacob/Desktop/P1Project/study/src/Sundhed.h
- /home/jacob/Desktop/P1Project/study/src/Teknisk.h
- /home/jacob/Desktop/P1Project/study/src/fakultet.h
- /home/jacob/Desktop/P1Project/study/src/utility.h
+ /home/jacob/Desktop/P1Project/study/src/Faculty.h
+ /home/jacob/Desktop/P1Project/study/src/Study.h
+ /home/jacob/Desktop/P1Project/study/src/Utility.h

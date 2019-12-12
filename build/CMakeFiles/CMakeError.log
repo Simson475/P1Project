@@ -1,6 +1,7 @@
 Detecting C [-std=c11] compiler features failed to compile with the following output:
 Change Dir: /home/jacob/Desktop/P1Project/build/CMakeFiles/CMakeTmp
 
+<<<<<<< Updated upstream
 Run Build Command:"/usr/bin/make" "cmTC_9e9fa/fast"
 /usr/bin/make -f CMakeFiles/cmTC_9e9fa.dir/build.make CMakeFiles/cmTC_9e9fa.dir/build
 make[1]: Entering directory '/home/jacob/Desktop/P1Project/build/CMakeFiles/CMakeTmp'
@@ -12,6 +13,19 @@ make[1]: *** [CMakeFiles/cmTC_9e9fa.dir/feature_tests.c.o] Error 1
 make[1]: Leaving directory '/home/jacob/Desktop/P1Project/build/CMakeFiles/CMakeTmp'
 Makefile:126: recipe for target 'cmTC_9e9fa/fast' failed
 make: *** [cmTC_9e9fa/fast] Error 2
+=======
+Run Build Command:"/usr/bin/make" "cmTC_0e59f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e59f.dir/build.make CMakeFiles/cmTC_0e59f.dir/build
+make[1]: Entering directory '/home/jacob/Desktop/P1Project/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e59f.dir/feature_tests.c.o
+/usr/bin/c89-gcc   -std=c11 -o CMakeFiles/cmTC_0e59f.dir/feature_tests.c.o   -c /home/jacob/Desktop/P1Project/build/CMakeFiles/feature_tests.c
+c89-gcc called with non ANSI/ISO C option -std=c11
+CMakeFiles/cmTC_0e59f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0e59f.dir/feature_tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_0e59f.dir/feature_tests.c.o] Error 1
+make[1]: Leaving directory '/home/jacob/Desktop/P1Project/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0e59f/fast' failed
+make: *** [cmTC_0e59f/fast] Error 2
+>>>>>>> Stashed changes
 
 
 

@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "src/utility.h"
-#include "src/Naturvidenskab.h"
-#include "src/Humaniora.h"
-#include "src/Samfund.h"
-#include "src/Sundhed.h"
-#include "src/Teknisk.h"
-#include "src/fakultet.h"
+#include "src/Utility.h"
+#include "src/Study.h"
+#include "src/Faculty.h"
 
 void Choose_faculty(char* Name);
 void Info_screen();
@@ -23,24 +19,25 @@ int main(void){
 	return 0; 
 }
 
-void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie*/
-    int Faculty_input, scan_result;
+/*Funktion hvor brugeren vælger ønsket studie*/
+void Choose_faculty(char* Name){ 
+    int Faculty_input, Scan_result;
     do{
         printf("\nVaelg dit oenskede fakultet:\n");
         printf("0 : Humaniora\n1 : Naturvidenskab\n2 : Teknik\n3 : Samfundsfag\n4 : Sundhed\n");
-        scan_result=scanf("%d", &Faculty_input);
+        Scan_result=scanf("%d", &Faculty_input);
         printf("---------------------------------------------------\n");
-        if(scan_result==0){
-            no_letters();
+        if(Scan_result==0){
+            No_letters();
         }
         else{
-            switch (Faculty_input){
-                case Humaniora: Decide_humaniora(Name);break;
-                case Natur: Decide_nature(Name);break;
-                case Teknisk: Decide_teknisk(Name);break;
-                case Samfund: Decide_samfund(Name);break;
-                case Sundhed: Decide_sundhed(Name);break;
-                default:break;
+            switch (Faculty_input - 1){
+                case Human: Decide_study(Name, Human);break;
+                case Nature: Decide_study(Name, Nature);   break;
+                case Tech: Decide_study(Name, Tech);  break;
+                case Social: Decide_study(Name, Social);  break;
+                case Health: Decide_study(Name, Health);  break;
+                default: break;
             }
         }
     }
@@ -49,7 +46,7 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
     return;
 
 }
-
+/*Printer info til brugeren*/
 void Info_screen(){
     printf("Denne test fungerer ved at du vil blive spurgt ind til din interesse for forskellige gymnasiefag.\n");
     printf("Du vil blive bedt om at tilkendegive din interesse fra 1-10.\n");
