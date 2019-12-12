@@ -1,0 +1,7 @@
+Name: test
+Prioriterede uddannelser:
+1. Politik & Administration
+2. Jura
+3. Samfundsfag
+4. Socialraadgiver
+5. Sociologi

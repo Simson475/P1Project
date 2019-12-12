@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/simon/programming/P1Project/study/src/study/src 
+C_INCLUDES = -I/home/jacob/Desktop/P1Project/study/src/study/src 
 

@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "src/utility.h"
-#include "src/Naturvidenskab.h"
-#include "src/Humaniora.h"
-#include "src/Samfund.h"
-#include "src/Sundhed.h"
-#include "src/Teknisk.h"
-#include "src/fakultet.h"
+#include "src/Utility.h"
+#include "src/Study.h"
+
 
 void Choose_faculty(char* Name);
 void Info_screen();
@@ -35,11 +31,11 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
         }
         else{
             switch (Faculty_input - 1){
-                case Humaniora: Decide_humaniora(Name);break;
-                case Natur:     Decide_nature(Name);   break;
-                case Teknisk:   Decide_teknisk(Name);  break;
-                case Samfund:   Decide_samfund(Name);  break;
-                case Sundhed:   Decide_sundhed(Name);  break;
+                case Human:     Decide_study(Name, Human);     break;
+                case Nature:    Decide_study(Name, Nature);    break;
+                case Tech:      Decide_study(Name, Tech);      break;
+                case Society:   Decide_study(Name, Society);   break;
+                case Health:    Decide_study(Name, Health);    break;
                 default: break;
             }
         }

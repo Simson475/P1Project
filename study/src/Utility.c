@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "utility.h"
+#include "Utility.h"
 
 
-void Get_questions(fakulteter_struct Choices[], weight Weights[], int Question_amount){
+void Get_questions(Faculty_struct Choices[], Weight Weights[], int Question_amount){
     int i = 0;
 
     for (i = 0; i < Question_amount; i++){
@@ -14,21 +14,21 @@ void Get_questions(fakulteter_struct Choices[], weight Weights[], int Question_a
     return;
 }
 
-void Question(fakulteter_struct Choices[], weight Weights){
+void Question(Faculty_struct Choices[], Weight Weights){
     int Input = Get_input(Weights.Custom_output);
     
-    Choices[0].score  = Choices[0].score  + Input * Weights.Weight_one    ;
-    Choices[1].score  = Choices[1].score  + Input * Weights.Weight_two    ;
-    Choices[2].score  = Choices[2].score  + Input * Weights.Weight_three  ;
-    Choices[3].score  = Choices[3].score  + Input * Weights.Weight_four   ;
-    Choices[4].score  = Choices[4].score  + Input * Weights.Weight_five   ;
-    Choices[5].score  = Choices[5].score  + Input * Weights.Weight_six    ;
-    Choices[6].score  = Choices[6].score  + Input * Weights.Weight_seven  ;
-    Choices[7].score  = Choices[7].score  + Input * Weights.Weight_eight  ;
-    Choices[8].score  = Choices[8].score  + Input * Weights.Weight_nine   ;
-    Choices[9].score  = Choices[9].score  + Input * Weights.Weight_ten    ;
-    Choices[10].score = Choices[10].score + Input * Weights.Weight_eleven ;
-    Choices[11].score = Choices[11].score + Input * Weights.Weight_twelve ;
+    Choices[0].Score  = Choices[0].Score  + Input * Weights.Weight_one    ;
+    Choices[1].Score  = Choices[1].Score  + Input * Weights.Weight_two    ;
+    Choices[2].Score  = Choices[2].Score  + Input * Weights.Weight_three  ;
+    Choices[3].Score  = Choices[3].Score  + Input * Weights.Weight_four   ;
+    Choices[4].Score  = Choices[4].Score  + Input * Weights.Weight_five   ;
+    Choices[5].Score  = Choices[5].Score  + Input * Weights.Weight_six    ;
+    Choices[6].Score  = Choices[6].Score  + Input * Weights.Weight_seven  ;
+    Choices[7].Score  = Choices[7].Score  + Input * Weights.Weight_eight  ;
+    Choices[8].Score  = Choices[8].Score  + Input * Weights.Weight_nine   ;
+    Choices[9].Score  = Choices[9].Score  + Input * Weights.Weight_ten    ;
+    Choices[10].Score = Choices[10].Score + Input * Weights.Weight_eleven ;
+    Choices[11].Score = Choices[11].Score + Input * Weights.Weight_twelve ;
 
     return;
 }
@@ -47,28 +47,28 @@ int Get_input(char Custom_output[]){
     return Input;
 }
 
-int Load_questions(weight Weights[], int Choice, fakulteter_struct Names[]){
+int Load_questions(Weight Weights[], int Choice, Faculty_struct Names[]){
     int i = 0;
     FILE *File_pointer;
     char str[MAXCHAR];
 
     switch (Choice){
-        case fakultetsvalg:
+        case Faculty_choice:
             File_pointer = fopen("Operator_files/operator_fakultet_file.csv","r");
             break;
-        case Humaniora:
+        case Human:
             File_pointer = fopen("Operator_files/operator_human_file.csv","r");
             break;
-        case Natur:
+        case Nature:
             File_pointer = fopen("Operator_files/operator_natur_file.csv","r");
             break;
-        case Teknisk:
+        case Tech:
             File_pointer = fopen("Operator_files/operator_teknik_file.csv","r");
             break;
-        case Samfund:
+        case Society:
             File_pointer = fopen("Operator_files/operator_samfund_file.csv","r");
             break;
-        case Sundhed:
+        case Health:
             File_pointer = fopen("Operator_files/operator_sundhed_file.csv","r");
             break;
         default:
@@ -94,18 +94,18 @@ int Load_questions(weight Weights[], int Choice, fakulteter_struct Names[]){
         }
         else if (i == 0){
             sscanf(str, ";%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n];%[^;\n]", 
-                   Names[0].navn,
-                   Names[1].navn,
-                   Names[2].navn,
-                   Names[3].navn,
-                   Names[4].navn,
-                   Names[5].navn,
-                   Names[6].navn,
-                   Names[7].navn,
-                   Names[8].navn,
-                   Names[9].navn,
-                   Names[10].navn,
-                   Names[11].navn);
+                   Names[0].Name,
+                   Names[1].Name,
+                   Names[2].Name,
+                   Names[3].Name,
+                   Names[4].Name,
+                   Names[5].Name,
+                   Names[6].Name,
+                   Names[7].Name,
+                   Names[8].Name,
+                   Names[9].Name,
+                   Names[10].Name,
+                   Names[11].Name);
         }
         i++;
     }
@@ -114,30 +114,30 @@ int Load_questions(weight Weights[], int Choice, fakulteter_struct Names[]){
     return i - 1;
 }
 
-void Sort_by_score (fakulteter_struct Choice[]) {
+void Sort_by_score (Faculty_struct Choice[]) {
     
-    qsort(Choice, MAXEDUCATIONS, sizeof(struct fakulteter_struct), Compare);
+    qsort(Choice, MAXEDUCATIONS, sizeof(struct Faculty_struct), Compare);
     
     return;
 }
 
 int Compare (const void *a, const void *b) {
-    struct fakulteter_struct *ia = (struct fakulteter_struct *)a;
-    struct fakulteter_struct *ib = (struct fakulteter_struct *)b;
+    struct Faculty_struct *ia = (struct Faculty_struct *)a;
+    struct Faculty_struct *ib = (struct Faculty_struct *)b;
 
-    return (ib -> score - ia -> score);
+    return (ib -> Score - ia -> Score);
 }
 
-void Result(fakulteter_struct Choice[], char name[]){
+void Result(Faculty_struct Choice[], char name[]){
     int i = 0;
     FILE *File_pointer;
     char File_name[30];
     sprintf(File_name, "%s.txt", name);
     File_pointer = fopen(File_name, "w"); 
 
-        fprintf(File_pointer, "Navn: %s\nPrioriterede uddannelser:\n", name);
-    while (Choice[i].score != 0 && i < 5){
-        fprintf(File_pointer, "%d. %s\n", i + 1, Choice[i].navn);
+        fprintf(File_pointer, "Name: %s\nPrioriterede uddannelser:\n", name);
+    while (Choice[i].Score != 0 && i < 5){
+        fprintf(File_pointer, "%d. %s\n", i + 1, Choice[i].Name);
         i++;
     }
     
@@ -148,30 +148,30 @@ void Result(fakulteter_struct Choice[], char name[]){
 
 char* Get_users_name(){
     char* Name = calloc(NAME_SIZE,sizeof(char));
-    printf("Indtast navn: \n");
+    printf("Indtast Name: \n");
     scanf("%[^\n]", Name);
     printf("---------------------------------------------------\n");
 
     return Name;
 }
 
-void Print_on_screen(fakulteter_struct Choice[]){
+void Print_on_screen(Faculty_struct Choice[]){
     int i;
     
     printf("\n---------------------------------------------------\nDin prioriterede liste:\n");
     for (i = 0; i < PRINTSIZE; i++){
-        if (Choice[i].score != 0){
-            if (Choice[i].score == Choice[i + 1].score){
+        if (Choice[i].Score != 0){
+            if (Choice[i].Score == Choice[i + 1].Score){
                 if (i == 4){
-                    printf("%d. %s, har samme prioritering som %d\n", i + 1, Choice[i].navn, i + 2);
-                    printf("%d. %s\n", i + 2, Choice[i + 1].navn);
+                    printf("%d. %s, har samme prioritering som %d\n", i + 1, Choice[i].Name, i + 2);
+                    printf("%d. %s\n", i + 2, Choice[i + 1].Name);
                 }
                 else{
-                    printf("%d. %s, har samme prioritering som %d\n", i + 1, Choice[i].navn, i + 2);
+                    printf("%d. %s, har samme prioritering som %d\n", i + 1, Choice[i].Name, i + 2);
                 }
             }
             else{
-                printf("%d. %s\n", i + 1, Choice[i].navn);
+                printf("%d. %s\n", i + 1, Choice[i].Name);
             }
         }
         else{

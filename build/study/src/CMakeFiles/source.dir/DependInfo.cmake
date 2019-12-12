@@ -4,13 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/simon/programming/P1Project/study/src/Humaniora.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Humaniora.c.o"
-  "/home/simon/programming/P1Project/study/src/Naturvidenskab.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Naturvidenskab.c.o"
-  "/home/simon/programming/P1Project/study/src/Samfund.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Samfund.c.o"
-  "/home/simon/programming/P1Project/study/src/Sundhed.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Sundhed.c.o"
-  "/home/simon/programming/P1Project/study/src/Teknisk.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Teknisk.c.o"
-  "/home/simon/programming/P1Project/study/src/fakultet.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/fakultet.c.o"
-  "/home/simon/programming/P1Project/study/src/utility.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/utility.c.o"
+  "/home/jacob/Desktop/P1Project/study/src/Faculty.c" "/home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/Faculty.c.o"
+  "/home/jacob/Desktop/P1Project/study/src/Study.c" "/home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/Study.c.o"
+  "/home/jacob/Desktop/P1Project/study/src/Utility.c" "/home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/Utility.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

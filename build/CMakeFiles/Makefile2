@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simon/programming/P1Project
+CMAKE_SOURCE_DIR = /home/jacob/Desktop/P1Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simon/programming/P1Project/build
+CMAKE_BINARY_DIR = /home/jacob/Desktop/P1Project/build
 
 #=============================================================================
 # Directory level rules for directory study/src
@@ -84,7 +84,7 @@ study/src/preinstall:
 study/src/CMakeFiles/source.dir/all:
 	$(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/depend
 	$(MAKE) -f study/src/CMakeFiles/source.dir/build.make study/src/CMakeFiles/source.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simon/programming/P1Project/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target source"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jacob/Desktop/P1Project/build/CMakeFiles --progress-num=3,4,5,6 "Built target source"
 .PHONY : study/src/CMakeFiles/source.dir/all
 
 # Include target in all.
@@ -94,9 +94,9 @@ all: study/src/CMakeFiles/source.dir/all
 
 # Build rule for subdir invocation for target.
 study/src/CMakeFiles/source.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/programming/P1Project/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Desktop/P1Project/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 study/src/CMakeFiles/source.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/programming/P1Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Desktop/P1Project/build/CMakeFiles 0
 .PHONY : study/src/CMakeFiles/source.dir/rule
 
 # Convenience name for target.
@@ -139,7 +139,7 @@ study/preinstall:
 study/CMakeFiles/Studievalg.dir/all: study/src/CMakeFiles/source.dir/all
 	$(MAKE) -f study/CMakeFiles/Studievalg.dir/build.make study/CMakeFiles/Studievalg.dir/depend
 	$(MAKE) -f study/CMakeFiles/Studievalg.dir/build.make study/CMakeFiles/Studievalg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simon/programming/P1Project/build/CMakeFiles --progress-num=1,2 "Built target Studievalg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jacob/Desktop/P1Project/build/CMakeFiles --progress-num=1,2 "Built target Studievalg"
 .PHONY : study/CMakeFiles/Studievalg.dir/all
 
 # Include target in all.
@@ -149,9 +149,9 @@ all: study/CMakeFiles/Studievalg.dir/all
 
 # Build rule for subdir invocation for target.
 study/CMakeFiles/Studievalg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/programming/P1Project/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Desktop/P1Project/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 study/CMakeFiles/Studievalg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/programming/P1Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Desktop/P1Project/build/CMakeFiles 0
 .PHONY : study/CMakeFiles/Studievalg.dir/rule
 
 # Convenience name for target.
