@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/jacob/Desktop/P1Project/study/src/Faculty.c" "/home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/Faculty.c.o"
-  "/home/jacob/Desktop/P1Project/study/src/Study.c" "/home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/Study.c.o"
-  "/home/jacob/Desktop/P1Project/study/src/Utility.c" "/home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/Utility.c.o"
+  "/home/simon/programming/P1Project/study/src/Faculty.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Faculty.c.o"
+  "/home/simon/programming/P1Project/study/src/Study.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Study.c.o"
+  "/home/simon/programming/P1Project/study/src/Utility.c" "/home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/Utility.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

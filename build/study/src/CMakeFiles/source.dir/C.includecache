@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jacob/Desktop/P1Project/study/src/Faculty.c
+/home/simon/programming/P1Project/study/src/Faculty.c
 stdio.h
 -
 stdlib.h
@@ -14,13 +14,13 @@ stdlib.h
 string.h
 -
 Utility.h
-/home/jacob/Desktop/P1Project/study/src/Utility.h
+/home/simon/programming/P1Project/study/src/Utility.h
 Faculty.h
-/home/jacob/Desktop/P1Project/study/src/Faculty.h
+/home/simon/programming/P1Project/study/src/Faculty.h
 
-/home/jacob/Desktop/P1Project/study/src/Faculty.h
+/home/simon/programming/P1Project/study/src/Faculty.h
 
-/home/jacob/Desktop/P1Project/study/src/Study.c
+/home/simon/programming/P1Project/study/src/Study.c
 stdio.h
 -
 stdlib.h
@@ -28,13 +28,13 @@ stdlib.h
 string.h
 -
 Utility.h
-/home/jacob/Desktop/P1Project/study/src/Utility.h
+/home/simon/programming/P1Project/study/src/Utility.h
 Study.h
-/home/jacob/Desktop/P1Project/study/src/Study.h
+/home/simon/programming/P1Project/study/src/Study.h
 
-/home/jacob/Desktop/P1Project/study/src/Study.h
+/home/simon/programming/P1Project/study/src/Study.h
 
-/home/jacob/Desktop/P1Project/study/src/Utility.c
+/home/simon/programming/P1Project/study/src/Utility.c
 stdio.h
 -
 stdlib.h
@@ -42,7 +42,7 @@ stdlib.h
 string.h
 -
 Utility.h
-/home/jacob/Desktop/P1Project/study/src/Utility.h
+/home/simon/programming/P1Project/study/src/Utility.h
 
-/home/jacob/Desktop/P1Project/study/src/Utility.h
+/home/simon/programming/P1Project/study/src/Utility.h
 

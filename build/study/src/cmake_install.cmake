@@ -1,4 +1,4 @@
-# Install script for directory: /home/jacob/Desktop/P1Project/study/src
+# Install script for directory: /home/simon/programming/P1Project/study/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

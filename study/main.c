@@ -31,14 +31,7 @@ void Choose_faculty(char* Name){ /*Funktion hvor brugeren vælger ønsket studie
             No_letters();
         }
         else{
-            switch (Faculty_input - 1){
-                case Human:     Decide_study(Name, Human);     break;
-                case Nature:    Decide_study(Name, Nature);    break;
-                case Tech:      Decide_study(Name, Tech);      break;
-                case Society:   Decide_study(Name, Society);   break;
-                case Health:    Decide_study(Name, Health);    break;
-                default: break;
-            }
+            Decide_study(Name, Faculty_input-1);
         }
     }
     while (Faculty_input < 1 || Faculty_input > 5);
