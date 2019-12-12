@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jacob/Desktop/P1Project
+CMAKE_SOURCE_DIR = /home/simon/programming/P1Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jacob/Desktop/P1Project/build
+CMAKE_BINARY_DIR = /home/simon/programming/P1Project/build
 
 # Include any dependencies generated for this target.
 include study/src/CMakeFiles/source.dir/depend.make
@@ -59,16 +59,16 @@ include study/src/CMakeFiles/source.dir/flags.make
 
 study/src/CMakeFiles/source.dir/Faculty.c.o: study/src/CMakeFiles/source.dir/flags.make
 study/src/CMakeFiles/source.dir/Faculty.c.o: ../study/src/Faculty.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacob/Desktop/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object study/src/CMakeFiles/source.dir/Faculty.c.o"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/source.dir/Faculty.c.o   -c /home/jacob/Desktop/P1Project/study/src/Faculty.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simon/programming/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object study/src/CMakeFiles/source.dir/Faculty.c.o"
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/source.dir/Faculty.c.o   -c /home/simon/programming/P1Project/study/src/Faculty.c
 
 study/src/CMakeFiles/source.dir/Faculty.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/source.dir/Faculty.c.i"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jacob/Desktop/P1Project/study/src/Faculty.c > CMakeFiles/source.dir/Faculty.c.i
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/simon/programming/P1Project/study/src/Faculty.c > CMakeFiles/source.dir/Faculty.c.i
 
 study/src/CMakeFiles/source.dir/Faculty.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/source.dir/Faculty.c.s"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jacob/Desktop/P1Project/study/src/Faculty.c -o CMakeFiles/source.dir/Faculty.c.s
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/simon/programming/P1Project/study/src/Faculty.c -o CMakeFiles/source.dir/Faculty.c.s
 
 study/src/CMakeFiles/source.dir/Faculty.c.o.requires:
 
@@ -83,16 +83,16 @@ study/src/CMakeFiles/source.dir/Faculty.c.o.provides.build: study/src/CMakeFiles
 
 study/src/CMakeFiles/source.dir/Study.c.o: study/src/CMakeFiles/source.dir/flags.make
 study/src/CMakeFiles/source.dir/Study.c.o: ../study/src/Study.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacob/Desktop/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object study/src/CMakeFiles/source.dir/Study.c.o"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/source.dir/Study.c.o   -c /home/jacob/Desktop/P1Project/study/src/Study.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simon/programming/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object study/src/CMakeFiles/source.dir/Study.c.o"
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/source.dir/Study.c.o   -c /home/simon/programming/P1Project/study/src/Study.c
 
 study/src/CMakeFiles/source.dir/Study.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/source.dir/Study.c.i"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jacob/Desktop/P1Project/study/src/Study.c > CMakeFiles/source.dir/Study.c.i
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/simon/programming/P1Project/study/src/Study.c > CMakeFiles/source.dir/Study.c.i
 
 study/src/CMakeFiles/source.dir/Study.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/source.dir/Study.c.s"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jacob/Desktop/P1Project/study/src/Study.c -o CMakeFiles/source.dir/Study.c.s
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/simon/programming/P1Project/study/src/Study.c -o CMakeFiles/source.dir/Study.c.s
 
 study/src/CMakeFiles/source.dir/Study.c.o.requires:
 
@@ -107,16 +107,16 @@ study/src/CMakeFiles/source.dir/Study.c.o.provides.build: study/src/CMakeFiles/s
 
 study/src/CMakeFiles/source.dir/Utility.c.o: study/src/CMakeFiles/source.dir/flags.make
 study/src/CMakeFiles/source.dir/Utility.c.o: ../study/src/Utility.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacob/Desktop/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object study/src/CMakeFiles/source.dir/Utility.c.o"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/source.dir/Utility.c.o   -c /home/jacob/Desktop/P1Project/study/src/Utility.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simon/programming/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object study/src/CMakeFiles/source.dir/Utility.c.o"
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/source.dir/Utility.c.o   -c /home/simon/programming/P1Project/study/src/Utility.c
 
 study/src/CMakeFiles/source.dir/Utility.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/source.dir/Utility.c.i"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jacob/Desktop/P1Project/study/src/Utility.c > CMakeFiles/source.dir/Utility.c.i
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/simon/programming/P1Project/study/src/Utility.c > CMakeFiles/source.dir/Utility.c.i
 
 study/src/CMakeFiles/source.dir/Utility.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/source.dir/Utility.c.s"
-	cd /home/jacob/Desktop/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jacob/Desktop/P1Project/study/src/Utility.c -o CMakeFiles/source.dir/Utility.c.s
+	cd /home/simon/programming/P1Project/build/study/src && /usr/bin/c89-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/simon/programming/P1Project/study/src/Utility.c -o CMakeFiles/source.dir/Utility.c.s
 
 study/src/CMakeFiles/source.dir/Utility.c.o.requires:
 
@@ -143,9 +143,9 @@ study/src/libsource.a: study/src/CMakeFiles/source.dir/Study.c.o
 study/src/libsource.a: study/src/CMakeFiles/source.dir/Utility.c.o
 study/src/libsource.a: study/src/CMakeFiles/source.dir/build.make
 study/src/libsource.a: study/src/CMakeFiles/source.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacob/Desktop/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libsource.a"
-	cd /home/jacob/Desktop/P1Project/build/study/src && $(CMAKE_COMMAND) -P CMakeFiles/source.dir/cmake_clean_target.cmake
-	cd /home/jacob/Desktop/P1Project/build/study/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/source.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simon/programming/P1Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libsource.a"
+	cd /home/simon/programming/P1Project/build/study/src && $(CMAKE_COMMAND) -P CMakeFiles/source.dir/cmake_clean_target.cmake
+	cd /home/simon/programming/P1Project/build/study/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/source.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 study/src/CMakeFiles/source.dir/build: study/src/libsource.a
@@ -159,10 +159,10 @@ study/src/CMakeFiles/source.dir/requires: study/src/CMakeFiles/source.dir/Utilit
 .PHONY : study/src/CMakeFiles/source.dir/requires
 
 study/src/CMakeFiles/source.dir/clean:
-	cd /home/jacob/Desktop/P1Project/build/study/src && $(CMAKE_COMMAND) -P CMakeFiles/source.dir/cmake_clean.cmake
+	cd /home/simon/programming/P1Project/build/study/src && $(CMAKE_COMMAND) -P CMakeFiles/source.dir/cmake_clean.cmake
 .PHONY : study/src/CMakeFiles/source.dir/clean
 
 study/src/CMakeFiles/source.dir/depend:
-	cd /home/jacob/Desktop/P1Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jacob/Desktop/P1Project /home/jacob/Desktop/P1Project/study/src /home/jacob/Desktop/P1Project/build /home/jacob/Desktop/P1Project/build/study/src /home/jacob/Desktop/P1Project/build/study/src/CMakeFiles/source.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/simon/programming/P1Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simon/programming/P1Project /home/simon/programming/P1Project/study/src /home/simon/programming/P1Project/build /home/simon/programming/P1Project/build/study/src /home/simon/programming/P1Project/build/study/src/CMakeFiles/source.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : study/src/CMakeFiles/source.dir/depend
 

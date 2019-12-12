@@ -1,7 +1,7 @@
 Name: test
 Prioriterede uddannelser:
-1. Politik & Administration
-2. Jura
-3. Samfundsfag
-4. Socialraadgiver
-5. Sociologi
+1. International Virksomhedskommunikation i Engelsk
+2. Engelsk
+3. International Virksomhedskommunikation i Spansk
+4. International Virksomhedskommunikation i Tysk
+5. Kunst og teknologi
