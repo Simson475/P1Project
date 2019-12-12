@@ -3,6 +3,7 @@
 #include <string.h>
 #include "src/Utility.h"
 #include "src/Study.h"
+#include "src/Faculty.h"
 
 
 void Choose_faculty(char* Name);
