@@ -60,7 +60,7 @@ int Load_questions(Weight Weights[], int Choice, Faculty_struct Names[]){
             File_pointer = fopen("Operator_files/operator_fakultet_file.csv","r");
             break;
         case Human:
-            File_pointer = fopen("Operator_files/operator_human_file.csv","r");
+            File_pointer = fopen("Operator_files/operator_human_file.csv","r"); 
             break;
         case Nature:
             File_pointer = fopen("Operator_files/operator_natur_file.csv","r");
@@ -155,7 +155,7 @@ void Result(Faculty_struct Choice[], char name[]){
 /*Tager imod brugerens navn*/
 char* Get_users_name(){
     char* Name = calloc(NAME_SIZE,sizeof(char));
-    printf("Indtast Name: \n");
+    printf("Indtast navn: \n");
     scanf("%[^\n]", Name);
     printf("---------------------------------------------------\n");
 
